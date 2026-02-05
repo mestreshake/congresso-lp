@@ -1,15 +1,26 @@
 import { useTranslation } from 'react-i18next'
 import * as motion from 'motion/react-client'
 
-// Importe as fotos aqui quando tiver:
-// import anaMariaPhoto from '../assets/presidents/ana-maria.jpg'
-// import jacquelinePhoto from '../assets/presidents/jacqueline.jpg'
-// import wueltonPhoto from '../assets/presidents/wuelton.jpg'
+// Fotos dos presidentes
+import anaMariaPhoto from '../assets/pessoas/AnaMoura_Photo.jpg'
+// import jacquelinePhoto from '../assets/pessoas/jacqueline.jpg' // Adicione quando tiver
+// import wueltonPhoto from '../assets/pessoas/wuelton.jpg' // Adicione quando tiver
+
+// Componente de foto com proporção fixa
+const PersonPhoto = ({ src, alt }: { src: string; alt: string }) => (
+  <div className="h-16 w-16 sm:h-20 sm:w-20 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#ffd89b]/30">
+    <img
+      src={src}
+      alt={alt}
+      className="h-full w-full object-cover"
+    />
+  </div>
+)
 
 // Placeholder de foto (ícone de pessoa)
 const PhotoPlaceholder = () => (
-  <div className="flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/30 flex-shrink-0">
-    <svg className="h-7 w-7 sm:h-10 sm:w-10 text-[#ffd89b]/50" fill="currentColor" viewBox="0 0 24 24">
+  <div className="flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/30 flex-shrink-0">
+    <svg className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffd89b]/50" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
     </svg>
   </div>
@@ -74,13 +85,12 @@ const AboutSection = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             className="flex h-full min-h-[120px] sm:min-h-[140px] flex-col items-center gap-2 sm:gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-3 sm:p-5 text-center cursor-default"
           >
-            {/* Substitua PhotoPlaceholder por <img src={anaMariaPhoto} ... /> quando tiver a foto */}
-            <PhotoPlaceholder />
+            <PersonPhoto src={anaMariaPhoto} alt="Ana Maria Moura da Silva" />
             <div>
-<p className="text-sm sm:text-base font-semibold text-white">{t('about.president1')}</p>
-                  <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">
-                    {t('about.president1Aff')}
-                  </p>
+              <p className="text-sm sm:text-base font-semibold text-white">{t('about.president1')}</p>
+              <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">
+                {t('about.president1Aff')}
+              </p>
             </div>
           </motion.div>
 
@@ -93,13 +103,12 @@ const AboutSection = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             className="flex h-full min-h-[120px] sm:min-h-[140px] flex-col items-center gap-2 sm:gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-3 sm:p-5 text-center cursor-default"
           >
-            {/* Substitua PhotoPlaceholder por <img src={jacquelinePhoto} ... /> quando tiver a foto */}
             <PhotoPlaceholder />
             <div>
-<p className="text-sm sm:text-base font-semibold text-white">{t('about.president2')}</p>
-                  <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">
-                    {t('about.president2Aff')}
-                  </p>
+              <p className="text-sm sm:text-base font-semibold text-white">{t('about.president2')}</p>
+              <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">
+                {t('about.president2Aff')}
+              </p>
             </div>
           </motion.div>
 
@@ -112,13 +121,12 @@ const AboutSection = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             className="flex h-full min-h-[120px] sm:min-h-[140px] flex-col items-center gap-2 sm:gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-3 sm:p-5 text-center cursor-default"
           >
-            {/* Substitua PhotoPlaceholder por <img src={wueltonPhoto} ... /> quando tiver a foto */}
             <PhotoPlaceholder />
             <div>
-<p className="text-sm sm:text-base font-semibold text-white">{t('about.president3')}</p>
-                  <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">
-                    {t('about.president3Aff')}
-                  </p>
+              <p className="text-sm sm:text-base font-semibold text-white">{t('about.president3')}</p>
+              <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">
+                {t('about.president3Aff')}
+              </p>
             </div>
           </motion.div>
         </div>

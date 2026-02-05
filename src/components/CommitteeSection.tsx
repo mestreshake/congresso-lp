@@ -1,85 +1,127 @@
 import { useTranslation } from 'react-i18next'
 import * as motion from 'motion/react-client'
 
+// Importar fotos dos membros do comitê
+import anaMariaPhoto from '../assets/pessoas/AnaMoura_Photo.jpg'
+import brunoLomontePhoto from '../assets/pessoas/Bruno Lomonte Photo.png'
+import cassandraModhalPhoto from '../assets/pessoas/Cassandra Modhal Photo.jpg'
+import julianaPhoto from '../assets/pessoas/Juliana Photo.png'
+import solangeSerranoPhoto from '../assets/pessoas/Solange M T Serrano_photo for IST2026.jpeg'
+
 const scientificCommittee = [
   {
     name: 'Alexander Vassilevski',
     affiliation: 'Institute of Bioorganic Chemistry of the Russian Academy of Sciences',
     country: 'Russia',
+    photo: null,
   },
   {
     name: 'Ana Maria Moura da Silva',
     affiliation: 'Instituto Butantan, São Paulo',
     country: 'Brazil',
+    photo: anaMariaPhoto,
   },
   {
     name: 'Bruno Lomonte',
     affiliation: 'Instituto Clodomiro Picado / Universidad de Costa Rica, San José',
     country: 'Costa Rica',
+    photo: brunoLomontePhoto,
   },
   {
     name: 'Cassandra Modhal',
     affiliation: 'Liverpool School of Tropical Medicine, Liverpool',
     country: 'UK',
+    photo: cassandraModhalPhoto,
   },
   {
     name: 'Choo Hock Tan',
     affiliation: 'National Tsing Hua University, Taiwan',
     country: 'Taiwan',
+    photo: null,
   },
   {
     name: 'Fan Hui Wen',
     affiliation: 'Instituto Butantan, São Paulo',
     country: 'Brazil',
+    photo: null,
   },
   {
     name: 'Gerardo Corzo',
     affiliation: 'Universidad Nacional Autónoma de México, Cuernavaca',
     country: 'Mexico',
+    photo: null,
   },
   {
     name: 'Glenn King',
     affiliation: 'The University of Queensland, Brisbane',
     country: 'Australia',
+    photo: null,
   },
   {
     name: 'Juliana Zuliani',
     affiliation: 'Universidade Federal de Rondônia, Porto Velho',
     country: 'Brazil',
+    photo: julianaPhoto,
   },
   {
     name: 'Kartik Sunagar',
     affiliation: 'Indian Institute of Science, Bangalore',
     country: 'India',
+    photo: null,
   },
   {
     name: 'Matthew Lewin',
     affiliation: 'California Academy of Sciences, Corte Madera',
     country: 'USA',
+    photo: null,
   },
   {
     name: 'Ornella Rossetto',
     affiliation: 'University of Padua, Padua',
     country: 'Italy',
+    photo: null,
   },
   {
     name: 'Solange M. T. Serrano',
     affiliation: 'Instituto Butantan, São Paulo',
     country: 'Brazil',
+    photo: solangeSerranoPhoto,
   },
   {
     name: 'Tim Lüddecke',
     affiliation:
       'Fraunhofer Institute for Molecular Biology and Applied Ecology, Gießen',
     country: 'Germany',
+    photo: null,
   },
   {
     name: 'Wuelton M. Monteiro',
     affiliation:
       'Universidade do Estado do Amazonas / Fundação de Medicina Tropical Dr. Heitor Vieira Dourado, Amazonas',
     country: 'Brazil',
+    photo: null,
   },
 ]
+
+// Componente de foto com proporção fixa
+const MemberPhoto = ({ src, alt }: { src: string; alt: string }) => (
+  <div className="h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#ffd89b]/30">
+    <img
+      src={src}
+      alt={alt}
+      className="h-full w-full object-cover"
+    />
+  </div>
+)
+
+// Placeholder de foto (ícone de pessoa)
+const PhotoPlaceholder = () => (
+  <div className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/20 flex-shrink-0">
+    <svg className="h-6 w-6 sm:h-7 sm:w-7 text-[#ffd89b]/40" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+    </svg>
+  </div>
+)
 
 const CommitteeSection = () => {
   const { t } = useTranslation()
@@ -124,13 +166,20 @@ const CommitteeSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
             whileHover={{ scale: 1.02, y: -3 }}
-            className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/20 p-3 sm:p-4 backdrop-blur-sm hover:border-[#ffd89b]/30 transition-colors cursor-default"
+            className="flex items-center gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/20 p-3 sm:p-4 backdrop-blur-sm hover:border-[#ffd89b]/30 transition-colors cursor-default"
           >
-            <p className="text-sm font-semibold text-white">{member.name}</p>
-            <p className="mt-1 text-xs text-slate-200">{member.affiliation}</p>
-            <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-[#ffd89b] drop-shadow-[0_0_2px_rgba(255,216,155,0.3)]">
-              {member.country}
-            </p>
+            {member.photo ? (
+              <MemberPhoto src={member.photo} alt={member.name} />
+            ) : (
+              <PhotoPlaceholder />
+            )}
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold text-white truncate">{member.name}</p>
+              <p className="mt-0.5 text-[11px] sm:text-xs text-slate-200 line-clamp-2">{member.affiliation}</p>
+              <p className="mt-1 text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.18em] text-[#ffd89b] drop-shadow-[0_0_2px_rgba(255,216,155,0.3)]">
+                {member.country}
+              </p>
+            </div>
           </motion.div>
         ))}
       </motion.div>
