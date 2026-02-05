@@ -8,7 +8,7 @@ const SponsorsSection = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="mt-20 md:mt-24">
+    <section className="mt-16 sm:mt-20 md:mt-24">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ const SponsorsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="mt-4 grid gap-4 rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:p-6"
+        className="mt-4 grid gap-4 rounded-2xl sm:rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-4 sm:p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:p-6"
       >
         {/* Sociedade Promotora */}
         <motion.div
@@ -33,15 +33,15 @@ const SponsorsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
           whileHover={{ scale: 1.01 }}
-          className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/30 p-5 backdrop-blur-sm"
+          className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/30 p-4 sm:p-5 backdrop-blur-sm"
         >
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('sponsors.promoterLabel')}
           </p>
-          <div className="mt-4 flex items-center gap-6">
+          <div className="mt-3 sm:mt-4 flex items-center gap-4 sm:gap-6">
             <motion.div
               whileHover={{ scale: 1.05, rotate: 2 }}
-              className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-xl bg-white/95 p-2"
+              className="flex h-16 w-16 sm:h-20 sm:w-20 flex-shrink-0 items-center justify-center rounded-lg sm:rounded-xl bg-white/95 p-1.5 sm:p-2"
             >
               <img
                 src={istLogo}
@@ -66,12 +66,12 @@ const SponsorsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#ffd89b]/20 p-5 backdrop-blur-sm"
+          className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#ffd89b]/20 p-4 sm:p-5 backdrop-blur-sm"
         >
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('sponsors.partnersLabel')}
           </p>
-          <div className="mt-4 grid gap-6 sm:grid-cols-2">
+          <div className="mt-3 sm:mt-4 grid gap-4 sm:gap-6 sm:grid-cols-2">
             {/* Ministério da Saúde */}
             <motion.div
               whileHover={{ scale: 1.02 }}
@@ -79,7 +79,7 @@ const SponsorsSection = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.05, rotate: -2 }}
-                className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-xl bg-white/95 p-2"
+                className="flex h-12 w-12 sm:h-16 sm:w-16 flex-shrink-0 items-center justify-center rounded-lg sm:rounded-xl bg-white/95 p-1.5 sm:p-2"
               >
                 <img
                   src={ministerioSaudeLogo}
@@ -98,7 +98,7 @@ const SponsorsSection = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.05, rotate: 2 }}
-                className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-xl bg-white/95 p-2"
+                className="flex h-12 w-12 sm:h-16 sm:w-16 flex-shrink-0 items-center justify-center rounded-lg sm:rounded-xl bg-white/95 p-1.5 sm:p-2"
               >
                 <img
                   src={butantanLogo}

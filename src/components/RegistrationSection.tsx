@@ -5,13 +5,13 @@ const RegistrationSection = () => {
   const { t } = useTranslation()
 
   return (
-    <section id="registration" className="mt-20 md:mt-24">
+    <section id="registration" className="mt-16 sm:mt-20 md:mt-24">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6 }}
-        className="relative overflow-hidden rounded-3xl border border-[#ffd89b]/30 bg-gradient-to-br from-[#2d3b30]/30 via-[#1a3d35]/20 to-[#753b2e]/20 p-6 shadow-xl shadow-[#2d3b30]/30 md:p-10"
+        className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-[#ffd89b]/30 bg-gradient-to-br from-[#2d3b30]/30 via-[#1a3d35]/20 to-[#753b2e]/20 p-4 sm:p-6 shadow-xl shadow-[#2d3b30]/30 md:p-10"
       >
         {/* Badge "Em breve" animado */}
         <motion.div
@@ -19,7 +19,7 @@ const RegistrationSection = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="absolute -right-12 top-8 rotate-45 bg-gradient-to-r from-[#ffd89b] to-[#ffc870] px-16 py-2 text-[11px] font-bold uppercase tracking-[0.2em] text-[#0a1f1a] shadow-lg"
+          className="absolute -right-14 top-6 sm:-right-12 sm:top-8 rotate-45 bg-gradient-to-r from-[#ffd89b] to-[#ffc870] px-12 py-1.5 sm:px-16 sm:py-2 text-[9px] sm:text-[11px] font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#0a1f1a] shadow-lg"
         >
           {t('registration.comingSoonBadge')}
         </motion.div>
@@ -39,7 +39,7 @@ const RegistrationSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-2 text-2xl font-semibold tracking-tight text-white md:text-3xl lg:text-4xl"
+            className="mt-2 text-xl font-semibold tracking-tight text-white sm:text-2xl md:text-3xl lg:text-4xl"
           >
             <span className="bg-gradient-to-r from-[#ffd89b] via-[#ffc870] to-[#ff8c5a] bg-clip-text text-transparent">
               {t('registration.titleHighlight')}

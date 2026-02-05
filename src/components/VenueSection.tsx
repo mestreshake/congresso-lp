@@ -5,8 +5,8 @@ const VenueSection = () => {
   const { t } = useTranslation()
 
   return (
-    <section id="venue" className="mt-20 md:mt-24">
-      <div className="grid gap-8 md:grid-cols-[1.2fr,1fr] md:items-start">
+    <section id="venue" className="mt-16 sm:mt-20 md:mt-24">
+      <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1.2fr,1fr] lg:items-start">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -16,7 +16,7 @@ const VenueSection = () => {
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('venue.label')}
           </p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white md:text-3xl">
+          <h2 className="mt-2 text-xl font-semibold tracking-tight text-white sm:text-2xl md:text-3xl">
             <span className="bg-gradient-to-r from-[#ffd89b] to-[#ffc870] bg-clip-text text-transparent">
               {t('venue.titleHighlight')}
             </span>{' '}
@@ -75,7 +75,8 @@ const VenueSection = () => {
           <iframe
             src="https://maps.google.com/maps?q=Av.+Coronel+Teixeira,+1320+A+-+Ponta+Negra,+Manaus+-+AM,+69037-000,+Brasil&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
-            height="320"
+            height="250"
+            className="sm:h-[320px]"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"

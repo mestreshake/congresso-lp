@@ -16,7 +16,7 @@ const ProgramSection = () => {
   const items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']
 
   return (
-    <section id="program" className="mt-20 md:mt-24">
+    <section id="program" className="mt-16 sm:mt-20 md:mt-24">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ const ProgramSection = () => {
         <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
           {t('program.label')}
         </p>
-        <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white md:text-3xl">
+        <h2 className="mt-2 text-xl font-semibold tracking-tight text-white sm:text-2xl md:text-3xl">
           <span className="bg-gradient-to-r from-[#ffd89b] to-[#ffc870] bg-clip-text text-transparent">
             {t('program.titleHighlight')}
           </span>
@@ -42,7 +42,7 @@ const ProgramSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-8 rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-6 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:p-8"
+        className="mt-6 sm:mt-8 rounded-2xl sm:rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-4 sm:p-6 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:p-8"
       >
         <ul className="space-y-4 text-sm leading-relaxed text-slate-200 md:text-[15px]">
           {items.map((item, index) => (

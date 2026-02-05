@@ -85,7 +85,7 @@ const CommitteeSection = () => {
   const { t } = useTranslation()
 
   return (
-    <section id="committee" className="mt-20 md:mt-24">
+    <section id="committee" className="mt-16 sm:mt-20 md:mt-24">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ const CommitteeSection = () => {
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('committee.label')}
           </p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white md:text-3xl">
+          <h2 className="mt-2 text-xl font-semibold tracking-tight text-white sm:text-2xl md:text-3xl">
             <span className="bg-gradient-to-r from-[#ffd89b] to-[#ffc870] bg-clip-text text-transparent">
               {t('committee.titleHighlight')}
             </span>{' '}
@@ -114,7 +114,7 @@ const CommitteeSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-8 grid gap-4 rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:grid-cols-2 md:p-6 lg:grid-cols-3"
+        className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 rounded-2xl sm:rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-4 sm:p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 sm:grid-cols-2 md:p-6 lg:grid-cols-3"
       >
         {scientificCommittee.map((member, index) => (
           <motion.div
@@ -124,7 +124,7 @@ const CommitteeSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
             whileHover={{ scale: 1.02, y: -3 }}
-            className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/20 p-4 backdrop-blur-sm hover:border-[#ffd89b]/30 transition-colors cursor-default"
+            className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/20 p-3 sm:p-4 backdrop-blur-sm hover:border-[#ffd89b]/30 transition-colors cursor-default"
           >
             <p className="text-sm font-semibold text-white">{member.name}</p>
             <p className="mt-1 text-xs text-slate-200">{member.affiliation}</p>
