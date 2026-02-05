@@ -76,13 +76,12 @@ const VenueSection = () => {
             src="https://maps.google.com/maps?q=Av.+Coronel+Teixeira,+1320+A+-+Ponta+Negra,+Manaus+-+AM,+69037-000,+Brasil&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="250"
-            className="sm:h-[320px]"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Hotel Tropical Manaus - Localização"
-            className="grayscale-[30%] contrast-[1.1]"
+            className="sm:h-[320px] grayscale-[30%] contrast-[1.1]"
           />
         </motion.div>
       </div>
