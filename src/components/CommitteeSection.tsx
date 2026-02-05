@@ -103,21 +103,24 @@ const scientificCommittee = [
   },
 ]
 
-// Componente de foto com proporção fixa
+// Componente de foto com proporção fixa e alta qualidade
 const MemberPhoto = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="h-12 w-12 sm:h-14 sm:w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#ffd89b]/30">
+  <div className="h-16 w-16 sm:h-20 sm:w-20 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#ffd89b]/30 shadow-md">
     <img
       src={src}
       alt={alt}
-      className="h-full w-full object-cover"
+      className="h-full w-full object-cover object-center"
+      style={{ imageRendering: 'auto' }}
+      loading="lazy"
+      decoding="async"
     />
   </div>
 )
 
 // Placeholder de foto (ícone de pessoa)
 const PhotoPlaceholder = () => (
-  <div className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/20 flex-shrink-0">
-    <svg className="h-6 w-6 sm:h-7 sm:w-7 text-[#ffd89b]/40" fill="currentColor" viewBox="0 0 24 24">
+  <div className="flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/20 flex-shrink-0 shadow-md">
+    <svg className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffd89b]/40" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
     </svg>
   </div>

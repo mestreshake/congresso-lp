@@ -6,21 +6,24 @@ import anaMariaPhoto from '../assets/pessoas/AnaMoura_Photo.jpg'
 // import jacquelinePhoto from '../assets/pessoas/jacqueline.jpg' // Adicione quando tiver
 // import wueltonPhoto from '../assets/pessoas/wuelton.jpg' // Adicione quando tiver
 
-// Componente de foto com proporção fixa
+// Componente de foto com proporção fixa e alta qualidade
 const PersonPhoto = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="h-16 w-16 sm:h-20 sm:w-20 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#ffd89b]/30">
+  <div className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#ffd89b]/40 shadow-lg">
     <img
       src={src}
       alt={alt}
-      className="h-full w-full object-cover"
+      className="h-full w-full object-cover object-center"
+      style={{ imageRendering: 'auto' }}
+      loading="eager"
+      decoding="async"
     />
   </div>
 )
 
 // Placeholder de foto (ícone de pessoa)
 const PhotoPlaceholder = () => (
-  <div className="flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/30 flex-shrink-0">
-    <svg className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffd89b]/50" fill="currentColor" viewBox="0 0 24 24">
+  <div className="flex h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/30 flex-shrink-0 shadow-lg">
+    <svg className="h-12 w-12 sm:h-14 sm:w-14 text-[#ffd89b]/50" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
     </svg>
   </div>
@@ -83,7 +86,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
             whileHover={{ scale: 1.02, y: -5 }}
-            className="flex h-full min-h-[120px] sm:min-h-[140px] flex-col items-center gap-2 sm:gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-3 sm:p-5 text-center cursor-default"
+            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-4 sm:p-6 text-center cursor-default"
           >
             <PersonPhoto src={anaMariaPhoto} alt="Ana Maria Moura da Silva" />
             <div>
@@ -101,7 +104,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
             whileHover={{ scale: 1.02, y: -5 }}
-            className="flex h-full min-h-[120px] sm:min-h-[140px] flex-col items-center gap-2 sm:gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-3 sm:p-5 text-center cursor-default"
+            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-4 sm:p-6 text-center cursor-default"
           >
             <PhotoPlaceholder />
             <div>
@@ -119,7 +122,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
             whileHover={{ scale: 1.02, y: -5 }}
-            className="flex h-full min-h-[120px] sm:min-h-[140px] flex-col items-center gap-2 sm:gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-3 sm:p-5 text-center cursor-default"
+            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/80 to-[#1a2f20]/80 border border-[#2d3b30]/30 p-4 sm:p-6 text-center cursor-default"
           >
             <PhotoPlaceholder />
             <div>

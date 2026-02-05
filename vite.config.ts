@@ -8,4 +8,8 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: '/congresso-lp/',
+  build: {
+    // Não inline imagens como base64, mantém como arquivos
+    assetsInlineLimit: 0,
+  },
 })

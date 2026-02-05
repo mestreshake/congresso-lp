@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+/* Forçar renderização em alta qualidade sempre */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1.0001);
+  -webkit-transform: translateZ(0) scale(1.0001);
+  will-change: transform;
+}
