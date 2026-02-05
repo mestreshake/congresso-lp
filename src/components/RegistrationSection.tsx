@@ -1,28 +1,28 @@
 const RegistrationSection = () => {
   return (
     <section id="registration" className="mt-20 md:mt-24">
-      <div className="grid gap-8 rounded-3xl border border-[#0098da]/40 bg-[#0098da]/10 p-6 md:grid-cols-[1.4fr,1fr] md:p-8">
+      <div className="grid gap-8 rounded-3xl border border-[#2d3b30]/40 bg-gradient-to-br from-[#2d3b30]/20 via-[#2d3b30]/12 to-[#753b2e]/15 p-6 shadow-xl shadow-[#2d3b30]/20 md:grid-cols-[1.4fr,1fr] md:p-8">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#fdd1a1]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             Inscrições &amp; submissão de trabalhos
           </p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight md:text-3xl">
-            Em breve: valores, modalidades e cronograma completo
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white md:text-3xl">
+            <span className="bg-gradient-to-r from-[#ffd89b] to-[#ffc870] bg-clip-text text-transparent">Em breve:</span> valores, modalidades e cronograma completo
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-slate-100 md:text-[15px]">
+          <p className="mt-3 text-sm leading-relaxed text-slate-200 md:text-[15px]">
             As modalidades de inscrição contemplarão profissionais, estudantes, membros
             da IST e demais participantes, com valores diferenciados por categoria e
             faixas de data (early, regular e late). As diretrizes para submissão de
             resumos, templates e modalidades de apresentação (pôster, comunicação oral,
             sessões especiais) serão divulgadas na segunda circular do evento.
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-slate-100 md:text-[15px]">
+          <p className="mt-3 text-sm leading-relaxed text-slate-200 md:text-[15px]">
             Caso deseje receber novidades sobre prazos, chamadas de trabalhos e abertura
             das inscrições, registre seu interesse pelo e-mail oficial do congresso.
           </p>
         </div>
-        <div className="space-y-4 rounded-2xl bg-[#0b1720]/70 p-5 text-xs text-slate-100">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#fdd1a1]">
+        <div className="space-y-4 rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/30 p-5 text-xs text-slate-200 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             Contato para informações
           </p>
           <div>
@@ -31,7 +31,7 @@ const RegistrationSection = () => {
             </p>
             <a
               href="mailto:ist2026.brazil@gmail.com"
-              className="mt-1 block text-sm font-medium text-[#fdd1a1] hover:text-white"
+              className="mt-1 block text-sm font-medium text-[#ffd89b] hover:text-white transition-colors"
             >
               ist2026.brazil@gmail.com
             </a>
@@ -40,7 +40,7 @@ const RegistrationSection = () => {
             <p className="text-[11px] uppercase tracking-[0.18em] text-slate-300">
               Próximas atualizações
             </p>
-            <ul className="mt-2 space-y-1">
+            <ul className="mt-2 space-y-1 text-slate-200">
               <li>• Divulgação dos valores de inscrição e lotes.</li>
               <li>• Datas para submissão de resumos e aceitações.</li>
               <li>• Informações sobre workshops, mesas-redondas e minicursos.</li>

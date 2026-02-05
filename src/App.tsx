@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0b1720] text-slate-50">
+    <div className="min-h-screen bg-gradient-to-br from-[#0a1f1a] via-[#0d2418] to-[#0f1f15] text-slate-50">
       <Header />
 
       <main className="mx-auto max-w-6xl px-4 pb-16 pt-10 md:px-6 md:pt-16">
