@@ -53,18 +53,12 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="#registration"
-                className="rounded-full bg-gradient-to-r from-[#2d3b30] to-[#753b2e] px-6 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-white shadow-lg shadow-[#2d3b30]/50 hover:shadow-[#753b2e]/70 hover:from-[#3d4b40] hover:to-[#854b3e] transition-all"
-              >
-                {t('hero.cta')}
-              </a>
+            <div className="mt-8">
               <a
                 href="#about"
                 className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-100 hover:text-[#ffd89b] transition-colors"
               >
-                {t('hero.ctaSecondary')}
+                {t('hero.ctaSecondary')} →
               </a>
             </div>
           </div>

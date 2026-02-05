@@ -40,15 +40,7 @@ const Header = () => {
             {t('nav.contact')}
           </a>
         </div>
-        <div className="flex items-center gap-4">
-          <LanguageSwitcher />
-          <a
-            href="#registration"
-            className="rounded-full bg-gradient-to-r from-[#2d3b30] to-[#753b2e] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-[#2d3b30]/50 hover:shadow-[#753b2e]/70 hover:from-[#3d4b40] hover:to-[#854b3e] transition-all md:text-[11px]"
-          >
-            {t('nav.registration')}
-          </a>
-        </div>
+        <LanguageSwitcher />
       </nav>
     </header>
   )

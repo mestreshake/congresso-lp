@@ -4,8 +4,7 @@
     "program": "Programação",
     "committee": "Comitê",
     "venue": "Local",
-    "contact": "Contato",
-    "registration": "Pré-inscrição"
+    "contact": "Contato"
   },
   "hero": {
     "badge": "Manaus • Amazônia • 13–17 setembro 2026",
@@ -21,7 +20,6 @@
     "orgLabel": "Organização",
     "orgValue": "Pan-American Section • IST",
     "orgSub": "Primeira edição na Amazônia brasileira",
-    "cta": "Quero participar",
     "ctaSecondary": "Conheça o congresso",
     "cardLocation": "Manaus • Amazonas",
     "cardTitle": "Imersão em toxinologia na maior floresta tropical do planeta.",
@@ -84,17 +82,17 @@
     "cardText": "A cidade de Manaus oferece uma combinação singular de infraestrutura urbana, história, cultura e biodiversidade, tornando-se o cenário ideal para discutir toxinologia em sua interface com saúde, inovação e meio ambiente."
   },
   "registration": {
-    "label": "Inscrições & submissão de trabalhos",
-    "titleHighlight": "Em breve:",
-    "titleEnd": "valores, modalidades e cronograma completo",
-    "p1": "As modalidades de inscrição contemplarão profissionais, estudantes, membros da IST e demais participantes, com valores diferenciados por categoria e faixas de data (early, regular e late). As diretrizes para submissão de resumos, templates e modalidades de apresentação (pôster, comunicação oral, sessões especiais) serão divulgadas na segunda circular do evento.",
-    "p2": "Caso deseje receber novidades sobre prazos, chamadas de trabalhos e abertura das inscrições, registre seu interesse pelo e-mail oficial do congresso.",
-    "contactLabel": "Contato para informações",
-    "emailLabel": "E-mail oficial",
+    "label": "Inscrições",
+    "comingSoonBadge": "Em breve",
+    "titleHighlight": "Inscrições abrindo em breve",
+    "subtitle": "Estamos preparando tudo para você! As inscrições serão abertas em breve com valores, modalidades e cronograma completo.",
+    "p1": "As modalidades de inscrição contemplarão profissionais, estudantes, membros da IST e demais participantes, com valores diferenciados por categoria e faixas de data (early, regular e late).",
+    "p2": "As diretrizes para submissão de resumos, templates e modalidades de apresentação (pôster, comunicação oral, sessões especiais) serão divulgadas na segunda circular do evento.",
+    "emailLabel": "E-mail para contato",
     "updatesLabel": "Próximas atualizações",
-    "update1": "Divulgação dos valores de inscrição e lotes.",
-    "update2": "Datas para submissão de resumos e aceitações.",
-    "update3": "Informações sobre workshops, mesas-redondas e minicursos."
+    "update1": "Abertura das inscrições",
+    "update2": "Submissão de resumos",
+    "update3": "Workshops e minicursos"
   },
   "sponsors": {
     "label": "Apoio & realização",
@@ -118,4 +116,3 @@
     "tagline": "Toxinology • Health • Amazon"
   }
 }
-

@@ -4,8 +4,7 @@
     "program": "Program",
     "committee": "Committee",
     "venue": "Venue",
-    "contact": "Contact",
-    "registration": "Pre-registration"
+    "contact": "Contact"
   },
   "hero": {
     "badge": "Manaus • Amazon • September 13–17, 2026",
@@ -21,7 +20,6 @@
     "orgLabel": "Organization",
     "orgValue": "Pan-American Section • IST",
     "orgSub": "First edition in the Brazilian Amazon",
-    "cta": "I want to participate",
     "ctaSecondary": "Learn about the congress",
     "cardLocation": "Manaus • Amazonas",
     "cardTitle": "Immersion in toxinology in the world's largest tropical forest.",
@@ -84,17 +82,17 @@
     "cardText": "The city of Manaus offers a unique combination of urban infrastructure, history, culture and biodiversity, making it the ideal setting for discussing toxinology at its interface with health, innovation and the environment."
   },
   "registration": {
-    "label": "Registration & abstract submission",
-    "titleHighlight": "Coming soon:",
-    "titleEnd": "fees, modalities and complete schedule",
-    "p1": "Registration modalities will include professionals, students, IST members and other participants, with differentiated fees by category and date ranges (early, regular and late). Guidelines for abstract submission, templates and presentation modalities (poster, oral communication, special sessions) will be announced in the second circular of the event.",
-    "p2": "If you wish to receive news about deadlines, calls for papers and registration opening, register your interest through the official congress email.",
-    "contactLabel": "Contact for information",
-    "emailLabel": "Official email",
+    "label": "Registration",
+    "comingSoonBadge": "Coming soon",
+    "titleHighlight": "Registration opening soon",
+    "subtitle": "We're preparing everything for you! Registration will open soon with fees, modalities and complete schedule.",
+    "p1": "Registration modalities will include professionals, students, IST members and other participants, with differentiated fees by category and date ranges (early, regular and late).",
+    "p2": "Guidelines for abstract submission, templates and presentation modalities (poster, oral communication, special sessions) will be announced in the second circular of the event.",
+    "emailLabel": "Contact email",
     "updatesLabel": "Upcoming updates",
-    "update1": "Announcement of registration fees and batches.",
-    "update2": "Dates for abstract submission and acceptances.",
-    "update3": "Information about workshops, round tables and short courses."
+    "update1": "Registration opening",
+    "update2": "Abstract submission",
+    "update3": "Workshops and short courses"
   },
   "sponsors": {
     "label": "Support & organization",
@@ -118,4 +116,3 @@
     "tagline": "Toxinology • Health • Amazon"
   }
 }
-
