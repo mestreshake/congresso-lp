@@ -2,8 +2,6 @@ import { useTranslation } from 'react-i18next'
 import * as motion from 'motion/react-client'
 import { useEffect, useState } from 'react'
 
-// Imagem do Teatro Amazonas como background
-import heroBg from '../assets/Teatro_am_01.jpg'
 
 // Componente de contador animado
 const AnimatedCounter = ({ value, color = '#ffd89b' }: { value: number; color?: string }) => {
@@ -38,11 +36,10 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: `url(${heroBg})` }}
+      className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center overflow-hidden"
     >
-      {/* Overlay com gradiente - verde amazônico vibrante */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0d4a2f]/80 via-[#0d4a2f]/70 to-[#0d4a2f]" />
+      {/* Overlay mais transparente para mostrar mais o background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0d4a2f]/40 to-[#0d4a2f]/70" />
       
       {/* Conteúdo */}
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-10 sm:py-16 md:px-6 md:py-24">

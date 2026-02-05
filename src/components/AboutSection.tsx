@@ -3,7 +3,7 @@ import * as motion from 'motion/react-client'
 
 // Fotos dos presidentes
 import anaMariaPhoto from '../assets/pessoas/AnaMoura_Photo.jpg'
-// import jacquelinePhoto from '../assets/pessoas/jacqueline.jpg' // Adicione quando tiver
+import jacquelinePhoto from '../assets/pessoas/jacqueline.jpeg'
 // import wueltonPhoto from '../assets/pessoas/wuelton.jpg' // Adicione quando tiver
 
 // Componente de foto com proporção fixa e alta qualidade
@@ -106,7 +106,7 @@ const AboutSection = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#2d8a5a]/50 p-4 sm:p-6 text-center cursor-default"
           >
-            <PhotoPlaceholder />
+            <PersonPhoto src={jacquelinePhoto} alt="Jacqueline de Almeida Gonçalves Sachett" />
             <div>
               <p className="text-sm sm:text-base font-semibold text-white">{t('about.president2')}</p>
               <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">

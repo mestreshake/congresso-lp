@@ -8,25 +8,34 @@ import RegistrationSection from './components/RegistrationSection'
 import SponsorsSection from './components/SponsorsSection'
 import Footer from './components/Footer'
 
+// Background fixo do Teatro Amazonas
+import teatroBg from './assets/Teatro_am_01.jpg'
+
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0d4a2f] via-[#156b45] to-[#0d4a2f] text-slate-50">
-      <Header />
+    <div 
+      className="min-h-screen text-slate-50 bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: `url(${teatroBg})` }}
+    >
+      {/* Overlay verde sobre o background */}
+      <div className="min-h-screen bg-gradient-to-b from-[#0d4a2f]/85 via-[#0d4a2f]/90 to-[#0d4a2f]/95">
+        <Header />
 
-      {/* Hero com background image */}
-      <Hero />
+        {/* Hero */}
+        <Hero />
 
-      {/* Demais seções */}
-      <main className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
-        <AboutSection />
-        <ProgramSection />
-        <CommitteeSection />
-        <VenueSection />
-        <RegistrationSection />
-        <SponsorsSection />
-      </main>
+        {/* Demais seções */}
+        <main className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+          <AboutSection />
+          <ProgramSection />
+          <CommitteeSection />
+          <VenueSection />
+          <RegistrationSection />
+          <SponsorsSection />
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   )
 }

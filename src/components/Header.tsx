@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
-import istLogo from '../assets/IST LOGO OFICIAL ESCOLHIDA BEGE.png'
+import istLogo from '../assets/IST LOGO OFICIAL ESCOLHIDA.png'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const Header = () => {
@@ -19,11 +19,13 @@ const Header = () => {
     <header className="sticky top-0 z-30 border-b border-[#2d8a5a]/40 bg-gradient-to-r from-[#0d4a2f]/95 via-[#156b45]/95 to-[#0d4a2f]/95 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
         <div className="flex items-center gap-2 sm:gap-3">
-          <img
-            src={istLogo}
-            alt="IST - International Society on Toxinology"
-            className="h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(253,209,161,0.4)] sm:h-10 md:h-12"
-          />
+          <div className="rounded-lg bg-white/95 p-2 shadow-md">
+            <img
+              src={istLogo}
+              alt="IST - International Society on Toxinology"
+              className="h-10 w-auto object-contain sm:h-12 md:h-14"
+            />
+          </div>
           <div className="leading-tight">
             <p className="text-[10px] uppercase tracking-[0.14em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(253,209,161,0.3)] sm:text-xs sm:tracking-[0.18em]">
               {t('header.congress')}
