@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="border-t border-[#2d3b30]/30 bg-gradient-to-r from-black/80 via-[#0a1f1a]/80 to-black/80 py-6 text-xs text-slate-300 backdrop-blur-sm"
+      className="border-t border-[#2d8a5a]/50 bg-gradient-to-r from-[#0d4a2f]/95 via-[#156b45]/95 to-[#0d4a2f]/95 py-6 text-xs text-slate-200 backdrop-blur-sm"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between md:px-6">
         <div className="flex items-center gap-3 sm:gap-4">

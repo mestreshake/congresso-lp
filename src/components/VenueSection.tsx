@@ -33,7 +33,7 @@ const VenueSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
             whileHover={{ scale: 1.01 }}
-            className="mt-6 rounded-2xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 to-[#2d3b30]/8 p-4 backdrop-blur-sm"
+            className="mt-6 rounded-2xl border border-[#2d8a5a]/50 bg-gradient-to-br from-[#156b45]/30 to-[#2d8a5a]/20 p-4 backdrop-blur-sm"
           >
             <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b]">
               {t('venue.addressLabel')}
@@ -70,7 +70,7 @@ const VenueSection = () => {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6, delay: 0.2 }}
           whileHover={{ scale: 1.02 }}
-          className="overflow-hidden rounded-3xl border border-[#2d3b30]/30 shadow-xl shadow-[#2d3b30]/20"
+          className="overflow-hidden rounded-3xl border border-[#2d8a5a]/50 shadow-xl shadow-[#156b45]/20"
         >
           <iframe
             src="https://maps.google.com/maps?q=Av.+Coronel+Teixeira,+1320+A+-+Ponta+Negra,+Manaus+-+AM,+69037-000,+Brasil&t=&z=15&ie=UTF8&iwloc=&output=embed"

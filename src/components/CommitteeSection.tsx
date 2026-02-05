@@ -7,6 +7,9 @@ import brunoLomontePhoto from '../assets/pessoas/Bruno Lomonte Photo.png'
 import cassandraModhalPhoto from '../assets/pessoas/Cassandra Modhal Photo.jpg'
 import julianaPhoto from '../assets/pessoas/Juliana Photo.png'
 import solangeSerranoPhoto from '../assets/pessoas/Solange M T Serrano_photo for IST2026.jpeg'
+import ornellaPhoto from '../assets/pessoas/ornela.png'
+import kartikPhoto from '../assets/pessoas/kartik.png'
+import corzoPhoto from '../assets/pessoas/corzo.png'
 
 const scientificCommittee = [
   {
@@ -49,7 +52,7 @@ const scientificCommittee = [
     name: 'Gerardo Corzo',
     affiliation: 'Universidad Nacional Autónoma de México, Cuernavaca',
     country: 'Mexico',
-    photo: null,
+    photo: corzoPhoto,
   },
   {
     name: 'Glenn King',
@@ -67,7 +70,7 @@ const scientificCommittee = [
     name: 'Kartik Sunagar',
     affiliation: 'Indian Institute of Science, Bangalore',
     country: 'India',
-    photo: null,
+    photo: kartikPhoto,
   },
   {
     name: 'Matthew Lewin',
@@ -79,7 +82,7 @@ const scientificCommittee = [
     name: 'Ornella Rossetto',
     affiliation: 'University of Padua, Padua',
     country: 'Italy',
-    photo: null,
+    photo: ornellaPhoto,
   },
   {
     name: 'Solange M. T. Serrano',
@@ -159,7 +162,7 @@ const CommitteeSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 rounded-2xl sm:rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-4 sm:p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 sm:grid-cols-2 md:p-6 lg:grid-cols-3"
+        className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/50 bg-gradient-to-br from-[#156b45]/30 via-[#ffb347]/15 to-[#2d8a5a]/25 p-4 sm:p-5 backdrop-blur-sm shadow-lg shadow-[#156b45]/20 sm:grid-cols-2 md:p-6 lg:grid-cols-3"
       >
         {scientificCommittee.map((member, index) => (
           <motion.div
@@ -169,7 +172,7 @@ const CommitteeSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
             whileHover={{ scale: 1.02, y: -3 }}
-            className="flex items-center gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/20 p-3 sm:p-4 backdrop-blur-sm hover:border-[#ffd89b]/30 transition-colors cursor-default"
+            className="flex items-center gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#2d8a5a]/50 p-3 sm:p-4 backdrop-blur-sm hover:border-[#ffb347]/50 transition-colors cursor-default"
           >
             {member.photo ? (
               <MemberPhoto src={member.photo} alt={member.name} />

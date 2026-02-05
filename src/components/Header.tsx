@@ -16,7 +16,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="sticky top-0 z-30 border-b border-[#2d3b30]/40 bg-gradient-to-r from-[#0a1f1a]/95 via-[#0d2418]/95 to-[#0f1f15]/95 backdrop-blur-md">
+    <header className="sticky top-0 z-30 border-b border-[#2d8a5a]/40 bg-gradient-to-r from-[#0d4a2f]/95 via-[#156b45]/95 to-[#0d4a2f]/95 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
         <div className="flex items-center gap-2 sm:gap-3">
           <img
@@ -71,7 +71,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden border-t border-[#2d3b30]/40 bg-gradient-to-b from-[#0a1f1a]/98 to-[#0d2418]/98 backdrop-blur-md">
+        <div className="lg:hidden border-t border-[#2d8a5a]/40 bg-gradient-to-b from-[#0d4a2f]/98 to-[#156b45]/98 backdrop-blur-md">
           <div className="flex flex-col px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <a

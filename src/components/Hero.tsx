@@ -2,10 +2,8 @@ import { useTranslation } from 'react-i18next'
 import * as motion from 'motion/react-client'
 import { useEffect, useState } from 'react'
 
-// Para usar sua própria imagem, substitua a URL abaixo por:
-// import heroBg from '../assets/hero-background.jpg'
-// E use: style={{ backgroundImage: `url(${heroBg})` }}
-const HERO_BG_URL = 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=1920&auto=format&fit=crop'
+// Imagem do Teatro Amazonas como background
+import heroBg from '../assets/Teatro_am_01.jpg'
 
 // Componente de contador animado
 const AnimatedCounter = ({ value, color = '#ffd89b' }: { value: number; color?: string }) => {
@@ -41,10 +39,10 @@ const Hero = () => {
   return (
     <section
       className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: `url(${HERO_BG_URL})` }}
+      style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Overlay escuro com gradiente */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a1f1a]/90 via-[#0a1f1a]/80 to-[#0a1f1a]" />
+      {/* Overlay com gradiente - verde amazônico vibrante */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0d4a2f]/80 via-[#0d4a2f]/70 to-[#0d4a2f]" />
       
       {/* Conteúdo */}
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-10 sm:py-16 md:px-6 md:py-24">
@@ -87,7 +85,7 @@ const Hero = () => {
               <motion.div
                 whileHover={{ scale: 1.02, y: -2 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                className="rounded-xl sm:rounded-2xl border border-white/10 bg-black/30 p-2 sm:p-4 backdrop-blur-sm cursor-default"
+                className="rounded-xl sm:rounded-2xl border border-[#ffb347]/30 bg-white/15 p-2 sm:p-4 backdrop-blur-sm cursor-default"
               >
                 <div className="flex items-center gap-1 sm:gap-2">
                   <svg className="h-3 w-3 sm:h-4 sm:w-4 text-[#ffd89b] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,7 +100,7 @@ const Hero = () => {
               <motion.div
                 whileHover={{ scale: 1.02, y: -2 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                className="rounded-xl sm:rounded-2xl border border-[#ffd89b]/20 bg-black/30 p-2 sm:p-4 backdrop-blur-sm cursor-default"
+                className="rounded-xl sm:rounded-2xl border border-[#ffb347]/40 bg-white/15 p-2 sm:p-4 backdrop-blur-sm cursor-default"
               >
                 <div className="flex items-center gap-1 sm:gap-2">
                   <svg className="h-3 w-3 sm:h-4 sm:w-4 text-[#ffd89b] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +116,7 @@ const Hero = () => {
               <motion.div
                 whileHover={{ scale: 1.02, y: -2 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                className="rounded-xl sm:rounded-2xl border border-[#753b2e]/30 bg-black/30 p-2 sm:p-4 backdrop-blur-sm cursor-default"
+                className="rounded-xl sm:rounded-2xl border border-[#ffb347]/30 bg-white/15 p-2 sm:p-4 backdrop-blur-sm cursor-default"
               >
                 <div className="flex items-center gap-1 sm:gap-2">
                   <svg className="h-3 w-3 sm:h-4 sm:w-4 text-[#ffd89b] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -157,7 +155,7 @@ const Hero = () => {
             <motion.div
               whileHover={{ scale: 1.01 }}
               transition={{ type: 'spring', stiffness: 200 }}
-              className="overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-2xl backdrop-blur-md"
+              className="overflow-hidden rounded-3xl border border-[#ffb347]/30 bg-white/20 shadow-2xl backdrop-blur-md"
             >
               <div className="flex h-full flex-col justify-between p-5 lg:p-7">
                 <div>

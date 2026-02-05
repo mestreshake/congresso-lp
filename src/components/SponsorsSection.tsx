@@ -24,7 +24,7 @@ const SponsorsSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="mt-4 grid gap-4 rounded-2xl sm:rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-4 sm:p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:p-6"
+        className="mt-4 grid gap-4 rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/50 bg-gradient-to-br from-[#156b45]/30 via-[#ffb347]/15 to-[#2d8a5a]/25 p-4 sm:p-5 backdrop-blur-sm shadow-lg shadow-[#156b45]/20 md:p-6"
       >
         {/* Sociedade Promotora */}
         <motion.div
@@ -33,7 +33,7 @@ const SponsorsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
           whileHover={{ scale: 1.01 }}
-          className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/30 p-4 sm:p-5 backdrop-blur-sm"
+          className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#2d8a5a]/50 p-4 sm:p-5 backdrop-blur-sm"
         >
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('sponsors.promoterLabel')}
@@ -66,7 +66,7 @@ const SponsorsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#ffd89b]/20 p-4 sm:p-5 backdrop-blur-sm"
+          className="rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#ffb347]/40 p-4 sm:p-5 backdrop-blur-sm"
         >
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('sponsors.partnersLabel')}

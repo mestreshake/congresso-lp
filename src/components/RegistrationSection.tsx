@@ -11,7 +11,7 @@ const RegistrationSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6 }}
-        className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-[#ffd89b]/30 bg-gradient-to-br from-[#2d3b30]/30 via-[#1a3d35]/20 to-[#753b2e]/20 p-4 sm:p-6 shadow-xl shadow-[#2d3b30]/30 md:p-10"
+        className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-[#ffb347]/50 bg-gradient-to-br from-[#156b45]/40 via-[#156b45]/30 to-[#2d8a5a]/30 p-4 sm:p-6 shadow-xl shadow-[#156b45]/25 md:p-10"
       >
         {/* Badge "Em breve" animado */}
         <motion.div

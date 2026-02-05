@@ -42,7 +42,7 @@ const ProgramSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-6 sm:mt-8 rounded-2xl sm:rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-4 sm:p-6 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:p-8"
+        className="mt-6 sm:mt-8 rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/50 bg-gradient-to-br from-[#156b45]/30 via-[#ffb347]/15 to-[#2d8a5a]/25 p-4 sm:p-6 backdrop-blur-sm shadow-lg shadow-[#156b45]/20 md:p-8"
       >
         <ul className="space-y-4 text-sm leading-relaxed text-slate-200 md:text-[15px]">
           {items.map((item, index) => (

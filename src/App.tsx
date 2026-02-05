@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a1f1a] via-[#0d2418] to-[#0f1f15] text-slate-50">
+    <div className="min-h-screen bg-gradient-to-br from-[#0d4a2f] via-[#156b45] to-[#0d4a2f] text-slate-50">
       <Header />
 
       {/* Hero com background image */}
