@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Manaus • Amazon • September 13–17, 2026",
+    "badge": "Manaus • Amazonas • September 13–17, 2026",
     "title": "23rd World Congress of the",
     "titleHighlight": "International Society on Toxinology",
     "subtitle": "\"Toxinology, health and the Amazon: Sharing experiences between clinical practice, fundamental research and innovation.\"",
@@ -77,6 +77,8 @@
     "titleEnd": "– Gateway to the Amazon rainforest",
     "p1": "The congress will be held at Hotel Tropical, in Manaus, combining infrastructure for large events with direct contact with Amazon nature. The privileged location favors both scientific activities and cultural and environmental immersion experiences.",
     "p2": "Detailed information about accommodation, transportation and tourist packages will be made available soon in the participants' area and sent to registrants.",
+    "addressLabel": "Address",
+    "openMaps": "Open in Google Maps",
     "cardLocation": "Manaus • Amazonas • Brazil",
     "cardTitle": "A global meeting in one of the most important biomes on the planet.",
     "cardText": "The city of Manaus offers a unique combination of urban infrastructure, history, culture and biodiversity, making it the ideal setting for discussing toxinology at its interface with health, innovation and the environment."
@@ -100,6 +102,7 @@
     "intro": "The congress has the support of scientific and health institutions committed to research, innovation and combating toxin-related diseases.",
     "promoterLabel": "Promoting society",
     "promoterName": "International Society on Toxinology (IST)",
+    "promoterDescription": "Founded in 1962, promotes scientific advancement in toxinology.",
     "partnersLabel": "Partner institutions",
     "partner1": "Ministry of Health",
     "partner2": "Instituto Butantan",

@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next'
-import istLogoBlue from '../assets/IST LOGO OFICIAL ESCOLHIDA AZUL.png'
+import istLogo from '../assets/SOCIEDADEINTERNACIONALTOXI.png'
+import ministerioSaudeLogo from '../assets/ministerio-da-saude-ministerio-da-saude-logo-png_seeklogo-93054.png'
+import butantanLogo from '../assets/Logo_Instituto_Butantan_vertical.svg'
 
 const SponsorsSection = () => {
   const { t } = useTranslation()
@@ -22,34 +24,72 @@ const SponsorsSection = () => {
         </div>
       </div>
 
-      <div className="mt-6 grid gap-4 rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 text-sm text-slate-200 md:grid-cols-3 md:p-6">
-        <div className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/30 p-4 backdrop-blur-sm">
+      <div className="mt-6 grid gap-4 rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:p-6">
+        {/* Sociedade Promotora */}
+        <div className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/30 p-5 backdrop-blur-sm">
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('sponsors.promoterLabel')}
           </p>
-          <img
-            src={istLogoBlue}
-            alt="IST - International Society on Toxinology"
-            className="mt-3 h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(45,59,48,0.3)]"
-          />
-          <p className="mt-3 font-semibold text-white">
-            {t('sponsors.promoterName')}
-          </p>
+          <div className="mt-4 flex items-center gap-6">
+            <div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-xl bg-white/95 p-2">
+              <img
+                src={istLogo}
+                alt="IST - International Society on Toxinology"
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+            <div>
+              <p className="font-semibold text-white">
+                {t('sponsors.promoterName')}
+              </p>
+              <p className="mt-1 text-xs text-slate-300">
+                {t('sponsors.promoterDescription')}
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#ffd89b]/20 p-4 backdrop-blur-sm">
+
+        {/* Instituições Parceiras */}
+        <div className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#ffd89b]/20 p-5 backdrop-blur-sm">
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('sponsors.partnersLabel')}
           </p>
-          <ul className="mt-2 space-y-1 text-sm text-white">
-            <li>• {t('sponsors.partner1')}</li>
-            <li>• {t('sponsors.partner2')}</li>
-          </ul>
+          <div className="mt-4 grid gap-6 sm:grid-cols-2">
+            {/* Ministério da Saúde */}
+            <div className="flex items-center gap-4">
+              <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-xl bg-white/95 p-2">
+                <img
+                  src={ministerioSaudeLogo}
+                  alt="Ministério da Saúde"
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              <p className="text-sm font-medium text-white">
+                {t('sponsors.partner1')}
+              </p>
+            </div>
+            {/* Instituto Butantan */}
+            <div className="flex items-center gap-4">
+              <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-xl bg-white/95 p-2">
+                <img
+                  src={butantanLogo}
+                  alt="Instituto Butantan"
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              <p className="text-sm font-medium text-white">
+                {t('sponsors.partner2')}
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#753b2e]/30 p-4 backdrop-blur-sm">
+
+        {/* Novos Patrocinadores */}
+        <div className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#753b2e]/30 p-5 backdrop-blur-sm">
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('sponsors.newSponsorsLabel')}
           </p>
-          <p className="mt-2 text-sm text-slate-200">
+          <p className="mt-3 text-sm text-slate-200">
             {t('sponsors.newSponsorsText')}
           </p>
         </div>
