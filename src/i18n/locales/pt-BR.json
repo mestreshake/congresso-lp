@@ -23,7 +23,6 @@
     "ctaSecondary": "Conheça o congresso",
     "cardLocation": "Manaus • Amazonas",
     "cardTitle": "Imersão em toxinologia na maior floresta tropical do planeta.",
-    "cardText": "Conectando pesquisadores, clínicos e inovadores para discutir toxinas, envenenamentos e soluções terapêuticas em um cenário único.",
     "lectures": "Palestras magnas",
     "sessions": "Sessões temáticas",
     "workshops": "Minicursos"
@@ -38,7 +37,6 @@
     "p2End": ", o congresso propõe um encontro internacional de excelência acadêmica, inclusivo, diverso e atento aos aspectos éticos.",
     "p3": "O evento reunirá cientistas interessados em biologia animal, caracterização bioquímica e mecanismos de ação de toxinas, fisiopatologia dos envenenamentos, desenvolvimento de tratamentos e de novos candidatos a fármacos baseados em toxinas, articulando pesquisa básica, inovação e prática clínica sob a perspectiva da Saúde Única.",
     "presidentsLabel": "Presidência do evento",
-    "presidentsText": "Liderança científica comprometida com excelência, inclusão e diálogo interdisciplinar.",
     "president1": "Ana Maria Moura da Silva",
     "president1Aff": "Instituto Butantan, São Paulo, SP – Brasil",
     "president2": "Jacqueline de Almeida Gonçalves Sachett",
@@ -48,22 +46,14 @@
   },
   "program": {
     "label": "Programação preliminar",
-    "titleHighlight": "Uma agenda equilibrada",
-    "titleEnd": "entre ciência, clínica e Amazônia",
-    "intro": "O congresso combinará sessões científicas de alto nível, atividades de formação, oportunidades para jovens pesquisadores e momentos de vivência sociocultural na Amazônia.",
-    "notice": "Detalhes finais de horários, palestrantes e inscrições serão divulgados em breve no cronograma oficial e no livro de programação.",
-    "scientificLabel": "Sessões científicas",
-    "scientific1": "Cerimônia de abertura com palestra e homenagem da IST.",
-    "scientific2": "4 palestras magnas com pesquisadores de grande destaque.",
-    "scientific3": "16 sessões temáticas com palestrantes convidados, jovens cientistas e apresentações orais selecionadas.",
-    "participationLabel": "Participação e formação",
-    "participation1": "2 sessões de pôsteres em horários nobres, com avaliação e premiação.",
-    "participation2": "5 minicursos como atividades extracurriculares.",
-    "participation3": "Espaços para interação entre grupos de pesquisa, redes colaborativas e jovens investigadores.",
-    "amazonLabel": "Experiência na Amazônia",
-    "amazon1": "Atividades socioculturais e jantar oficial do congresso.",
-    "amazon2": "Imersão no cenário e na biodiversidade cultural da Amazônia.",
-    "amazon3": "Oportunidades para conhecer iniciativas locais em saúde, pesquisa e conservação."
+    "titleHighlight": "A programação do evento incluirá:",
+    "intro": "",
+    "item1": "Cerimônia de abertura que inclui palestra e homenagem ao cientista de destaque na área selecionado pela IST e por cientistas previamente homenageados.",
+    "item2": "4 palestras magnas com pesquisadores de grande destaque.",
+    "item3": "16 sessões, com 5 apresentações: 1 palestra principal de 20 min, 3 palestrantes convidados com apresentações de 15 min, sendo um deles um jovem cientista, e 1 apresentação oral de 10 min de um trabalho selecionado entre os resumos apresentados, com tempo extra para perguntas.",
+    "item4": "2 sessões de pôsteres em horários nobres, com apresentação e avaliação dos trabalhos, sujeitos a premiação.",
+    "item5": "5 minicursos como atividade extracurricular.",
+    "item6": "Atividades de interação sociocultural incluindo o jantar oficial e uma imersão pelo cenário e biodiversidade cultural da Amazônia."
   },
   "committee": {
     "label": "Comitê científico",
@@ -76,12 +66,8 @@
     "titleHighlight": "Hotel Tropical, Manaus",
     "titleEnd": "– Porta de entrada para a floresta amazônica",
     "p1": "O congresso será realizado no Hotel Tropical, em Manaus, combinando infraestrutura para eventos de grande porte com o contato direto com a natureza amazônica. A localização privilegiada favorece tanto as atividades científicas quanto as experiências culturais e de imersão ambiental.",
-    "p2": "Informações detalhadas sobre hospedagem, transporte e pacotes turísticos serão disponibilizadas em breve na área de participantes e enviados aos inscritos.",
     "addressLabel": "Endereço",
-    "openMaps": "Abrir no Google Maps",
-    "cardLocation": "Manaus • Amazonas • Brasil",
-    "cardTitle": "Um encontro global em um dos biomas mais importantes do planeta.",
-    "cardText": "A cidade de Manaus oferece uma combinação singular de infraestrutura urbana, história, cultura e biodiversidade, tornando-se o cenário ideal para discutir toxinologia em sua interface com saúde, inovação e meio ambiente."
+    "openMaps": "Abrir no Google Maps"
   },
   "registration": {
     "label": "Inscrições",
@@ -89,7 +75,7 @@
     "titleHighlight": "Inscrições abrindo em breve",
     "subtitle": "Estamos preparando tudo para você! As inscrições serão abertas em breve com valores, modalidades e cronograma completo.",
     "p1": "As modalidades de inscrição contemplarão profissionais, estudantes, membros da IST e demais participantes, com valores diferenciados por categoria e faixas de data (early, regular e late).",
-    "p2": "As diretrizes para submissão de resumos, templates e modalidades de apresentação (pôster, comunicação oral, sessões especiais) serão divulgadas na segunda circular do evento.",
+    "p2": "Diretrizes para submissão de resumos e modalidades de apresentação também serão divulgadas em breve.",
     "emailLabel": "E-mail para contato",
     "updatesLabel": "Próximas atualizações",
     "update1": "Abertura das inscrições",
@@ -98,16 +84,12 @@
   },
   "sponsors": {
     "label": "Apoio & realização",
-    "titleHighlight": "Instituições parceiras",
-    "intro": "O congresso conta com o apoio de instituições científicas e de saúde comprometidas com a pesquisa, a inovação e o enfrentamento das doenças relacionadas a toxinas.",
     "promoterLabel": "Sociedade promotora",
     "promoterName": "International Society on Toxinology (IST)",
     "promoterDescription": "Fundada em 1962, promove o avanço científico em toxinologia.",
     "partnersLabel": "Instituições parceiras",
     "partner1": "Ministério da Saúde",
-    "partner2": "Instituto Butantan",
-    "newSponsorsLabel": "Novos patrocinadores",
-    "newSponsorsText": "Informações sobre cotas de patrocínio, categorias e benefícios serão disponibilizadas em breve para instituições interessadas."
+    "partner2": "Instituto Butantan"
   },
   "footer": {
     "title": "23rd World Congress of the International Society on Toxinology",

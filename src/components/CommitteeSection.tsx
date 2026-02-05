@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import * as motion from 'motion/react-client'
 
 const scientificCommittee = [
   {
@@ -85,7 +86,13 @@ const CommitteeSection = () => {
 
   return (
     <section id="committee" className="mt-20 md:mt-24">
-      <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-100px' }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+      >
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
             {t('committee.label')}
@@ -100,22 +107,33 @@ const CommitteeSection = () => {
             {t('committee.intro')}
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="mt-8 grid gap-4 rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:grid-cols-2 md:p-6 lg:grid-cols-3">
-        {scientificCommittee.map((member) => (
-          <div
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-100px' }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="mt-8 grid gap-4 rounded-3xl border border-[#2d3b30]/30 bg-gradient-to-br from-[#2d3b30]/15 via-[#ffd89b]/8 to-[#753b2e]/15 p-5 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20 md:grid-cols-2 md:p-6 lg:grid-cols-3"
+      >
+        {scientificCommittee.map((member, index) => (
+          <motion.div
             key={member.name}
-            className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/20 p-4 backdrop-blur-sm hover:border-[#2d3b30]/40 transition-colors"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: index * 0.05 }}
+            whileHover={{ scale: 1.02, y: -3 }}
+            className="rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/20 p-4 backdrop-blur-sm hover:border-[#ffd89b]/30 transition-colors cursor-default"
           >
             <p className="text-sm font-semibold text-white">{member.name}</p>
             <p className="mt-1 text-xs text-slate-200">{member.affiliation}</p>
             <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-[#ffd89b] drop-shadow-[0_0_2px_rgba(255,216,155,0.3)]">
               {member.country}
             </p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   )
 }
