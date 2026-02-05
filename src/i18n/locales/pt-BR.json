@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "program": "Programação",
+    "committee": "Comitê",
+    "venue": "Local",
+    "contact": "Contato",
+    "registration": "Pré-inscrição"
+  },
+  "hero": {
+    "badge": "Manaus • Amazônia • 13–17 setembro 2026",
+    "title": "23rd World Congress of the",
+    "titleHighlight": "International Society on Toxinology",
+    "subtitle": "\"Toxinologia, saúde e Amazônia: Compartilhando experiências entre a prática clínica, a pesquisa fundamental e a inovação\".",
+    "dateLabel": "Data",
+    "dateValue": "13–17 setembro 2026",
+    "dateSub": "5 dias de programação",
+    "venueLabel": "Local",
+    "venueValue": "Hotel Tropical",
+    "venueSub": "Manaus • Amazonas • Brasil",
+    "orgLabel": "Organização",
+    "orgValue": "Pan-American Section • IST",
+    "orgSub": "Primeira edição na Amazônia brasileira",
+    "cta": "Quero participar",
+    "ctaSecondary": "Conheça o congresso",
+    "cardLocation": "Manaus • Amazonas",
+    "cardTitle": "Imersão em toxinologia na maior floresta tropical do planeta.",
+    "cardText": "Conectando pesquisadores, clínicos e inovadores para discutir toxinas, envenenamentos e soluções terapêuticas em um cenário único.",
+    "lectures": "Palestras magnas",
+    "sessions": "Sessões temáticas",
+    "workshops": "Minicursos"
+  },
+  "about": {
+    "label": "Sobre o congresso",
+    "titleHighlight": "Toxinologia, saúde e Amazônia",
+    "titleEnd": "em diálogo global",
+    "p1": "A Sociedade Internacional de Toxinologia (IST), fundada em 1962, promove o avanço científico em todas as áreas da toxinologia, abrangendo animais, plantas e microrganismos venenosos e peçonhentos, toxinas derivadas, envenenamentos, desenvolvimento de antivenenos e aplicações terapêuticas e biotecnológicas de toxinas. A Sociedade conecta pesquisadores de todo o mundo por meio de encontros periódicos que estimulam o intercâmbio de ideias, resultados e colaborações.",
+    "p2Start": "Em 2026, o 23rd World Congress of the International Society on Toxinology chega a Manaus, Amazonas, pela primeira vez na Amazônia brasileira, em uma região de extraordinária diversidade biológica e alta incidência de acidentes por animais peçonhentos. Com o tema",
+    "p2Theme": "\"Toxinologia, saúde e Amazônia: Compartilhando experiências entre a prática clínica, a pesquisa fundamental e a inovação\"",
+    "p2End": ", o congresso propõe um encontro internacional de excelência acadêmica, inclusivo, diverso e atento aos aspectos éticos.",
+    "p3": "O evento reunirá cientistas interessados em biologia animal, caracterização bioquímica e mecanismos de ação de toxinas, fisiopatologia dos envenenamentos, desenvolvimento de tratamentos e de novos candidatos a fármacos baseados em toxinas, articulando pesquisa básica, inovação e prática clínica sob a perspectiva da Saúde Única.",
+    "presidentsLabel": "Presidência do evento",
+    "presidentsText": "Liderança científica comprometida com excelência, inclusão e diálogo interdisciplinar.",
+    "president1": "Ana Maria Moura da Silva",
+    "president1Aff": "Instituto Butantan, São Paulo, SP – Brasil",
+    "president2": "Jacqueline de Almeida Gonçalves Sachett",
+    "president2Aff": "Universidade do Estado do Amazonas, Manaus, AM – Brasil",
+    "president3": "Wuelton M. Monteiro",
+    "president3Aff": "Universidade do Estado do Amazonas & Fundação de Medicina Tropical Dr. Heitor Vieira Dourado, Manaus, AM – Brasil"
+  },
+  "program": {
+    "label": "Programação preliminar",
+    "titleHighlight": "Uma agenda equilibrada",
+    "titleEnd": "entre ciência, clínica e Amazônia",
+    "intro": "O congresso combinará sessões científicas de alto nível, atividades de formação, oportunidades para jovens pesquisadores e momentos de vivência sociocultural na Amazônia.",
+    "notice": "Detalhes finais de horários, palestrantes e inscrições serão divulgados em breve no cronograma oficial e no livro de programação.",
+    "scientificLabel": "Sessões científicas",
+    "scientific1": "Cerimônia de abertura com palestra e homenagem da IST.",
+    "scientific2": "4 palestras magnas com pesquisadores de grande destaque.",
+    "scientific3": "16 sessões temáticas com palestrantes convidados, jovens cientistas e apresentações orais selecionadas.",
+    "participationLabel": "Participação e formação",
+    "participation1": "2 sessões de pôsteres em horários nobres, com avaliação e premiação.",
+    "participation2": "5 minicursos como atividades extracurriculares.",
+    "participation3": "Espaços para interação entre grupos de pesquisa, redes colaborativas e jovens investigadores.",
+    "amazonLabel": "Experiência na Amazônia",
+    "amazon1": "Atividades socioculturais e jantar oficial do congresso.",
+    "amazon2": "Imersão no cenário e na biodiversidade cultural da Amazônia.",
+    "amazon3": "Oportunidades para conhecer iniciativas locais em saúde, pesquisa e conservação."
+  },
+  "committee": {
+    "label": "Comitê científico",
+    "titleHighlight": "Referências internacionais",
+    "titleEnd": "em toxinologia",
+    "intro": "O comitê científico reúne especialistas de diferentes continentes, atuando em instituições de excelência e em múltiplas frentes da toxinologia, desde pesquisa básica até aplicações clínicas e biotecnológicas."
+  },
+  "venue": {
+    "label": "Local do evento",
+    "titleHighlight": "Hotel Tropical, Manaus",
+    "titleEnd": "– Porta de entrada para a floresta amazônica",
+    "p1": "O congresso será realizado no Hotel Tropical, em Manaus, combinando infraestrutura para eventos de grande porte com o contato direto com a natureza amazônica. A localização privilegiada favorece tanto as atividades científicas quanto as experiências culturais e de imersão ambiental.",
+    "p2": "Informações detalhadas sobre hospedagem, transporte e pacotes turísticos serão disponibilizadas em breve na área de participantes e enviados aos inscritos.",
+    "cardLocation": "Manaus • Amazonas • Brasil",
+    "cardTitle": "Um encontro global em um dos biomas mais importantes do planeta.",
+    "cardText": "A cidade de Manaus oferece uma combinação singular de infraestrutura urbana, história, cultura e biodiversidade, tornando-se o cenário ideal para discutir toxinologia em sua interface com saúde, inovação e meio ambiente."
+  },
+  "registration": {
+    "label": "Inscrições & submissão de trabalhos",
+    "titleHighlight": "Em breve:",
+    "titleEnd": "valores, modalidades e cronograma completo",
+    "p1": "As modalidades de inscrição contemplarão profissionais, estudantes, membros da IST e demais participantes, com valores diferenciados por categoria e faixas de data (early, regular e late). As diretrizes para submissão de resumos, templates e modalidades de apresentação (pôster, comunicação oral, sessões especiais) serão divulgadas na segunda circular do evento.",
+    "p2": "Caso deseje receber novidades sobre prazos, chamadas de trabalhos e abertura das inscrições, registre seu interesse pelo e-mail oficial do congresso.",
+    "contactLabel": "Contato para informações",
+    "emailLabel": "E-mail oficial",
+    "updatesLabel": "Próximas atualizações",
+    "update1": "Divulgação dos valores de inscrição e lotes.",
+    "update2": "Datas para submissão de resumos e aceitações.",
+    "update3": "Informações sobre workshops, mesas-redondas e minicursos."
+  },
+  "sponsors": {
+    "label": "Apoio & realização",
+    "titleHighlight": "Instituições parceiras",
+    "intro": "O congresso conta com o apoio de instituições científicas e de saúde comprometidas com a pesquisa, a inovação e o enfrentamento das doenças relacionadas a toxinas.",
+    "promoterLabel": "Sociedade promotora",
+    "promoterName": "International Society on Toxinology (IST)",
+    "partnersLabel": "Instituições parceiras",
+    "partner1": "Ministério da Saúde",
+    "partner2": "Instituto Butantan",
+    "newSponsorsLabel": "Novos patrocinadores",
+    "newSponsorsText": "Informações sobre cotas de patrocínio, categorias e benefícios serão disponibilizadas em breve para instituições interessadas."
+  },
+  "footer": {
+    "title": "23rd World Congress of the International Society on Toxinology",
+    "location": "Manaus, Amazonas • Brasil • 13–17 de setembro de 2026",
+    "contact": "Contato:"
+  },
+  "header": {
+    "congress": "World Congress of IST",
+    "tagline": "Toxinology • Health • Amazon"
+  }
+}
+

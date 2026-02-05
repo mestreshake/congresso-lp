@@ -1,33 +1,35 @@
+import { useTranslation } from 'react-i18next'
+
 const RegistrationSection = () => {
+  const { t } = useTranslation()
+
   return (
     <section id="registration" className="mt-20 md:mt-24">
       <div className="grid gap-8 rounded-3xl border border-[#2d3b30]/40 bg-gradient-to-br from-[#2d3b30]/20 via-[#2d3b30]/12 to-[#753b2e]/15 p-6 shadow-xl shadow-[#2d3b30]/20 md:grid-cols-[1.4fr,1fr] md:p-8">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
-            Inscrições &amp; submissão de trabalhos
+            {t('registration.label')}
           </p>
           <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white md:text-3xl">
-            <span className="bg-gradient-to-r from-[#ffd89b] to-[#ffc870] bg-clip-text text-transparent">Em breve:</span> valores, modalidades e cronograma completo
+            <span className="bg-gradient-to-r from-[#ffd89b] to-[#ffc870] bg-clip-text text-transparent">
+              {t('registration.titleHighlight')}
+            </span>{' '}
+            {t('registration.titleEnd')}
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-200 md:text-[15px]">
-            As modalidades de inscrição contemplarão profissionais, estudantes, membros
-            da IST e demais participantes, com valores diferenciados por categoria e
-            faixas de data (early, regular e late). As diretrizes para submissão de
-            resumos, templates e modalidades de apresentação (pôster, comunicação oral,
-            sessões especiais) serão divulgadas na segunda circular do evento.
+            {t('registration.p1')}
           </p>
           <p className="mt-3 text-sm leading-relaxed text-slate-200 md:text-[15px]">
-            Caso deseje receber novidades sobre prazos, chamadas de trabalhos e abertura
-            das inscrições, registre seu interesse pelo e-mail oficial do congresso.
+            {t('registration.p2')}
           </p>
         </div>
         <div className="space-y-4 rounded-2xl bg-gradient-to-br from-[#0d2418]/90 to-[#1a2f20]/90 border border-[#2d3b30]/30 p-5 text-xs text-slate-200 backdrop-blur-sm shadow-lg shadow-[#2d3b30]/20">
           <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
-            Contato para informações
+            {t('registration.contactLabel')}
           </p>
           <div>
             <p className="text-[11px] uppercase tracking-[0.18em] text-slate-300">
-              E-mail oficial
+              {t('registration.emailLabel')}
             </p>
             <a
               href="mailto:ist2026.brazil@gmail.com"
@@ -38,12 +40,12 @@ const RegistrationSection = () => {
           </div>
           <div className="pt-2">
             <p className="text-[11px] uppercase tracking-[0.18em] text-slate-300">
-              Próximas atualizações
+              {t('registration.updatesLabel')}
             </p>
             <ul className="mt-2 space-y-1 text-slate-200">
-              <li>• Divulgação dos valores de inscrição e lotes.</li>
-              <li>• Datas para submissão de resumos e aceitações.</li>
-              <li>• Informações sobre workshops, mesas-redondas e minicursos.</li>
+              <li>• {t('registration.update1')}</li>
+              <li>• {t('registration.update2')}</li>
+              <li>• {t('registration.update3')}</li>
             </ul>
           </div>
         </div>
@@ -53,5 +55,3 @@ const RegistrationSection = () => {
 }
 
 export default RegistrationSection
-
-

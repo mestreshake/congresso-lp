@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import istLogo from '../assets/IST LOGO OFICIAL ESCOLHIDA BEGE.png'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Header = () => {
+  const { t } = useTranslation()
+
   return (
     <header className="sticky top-0 z-30 border-b border-[#2d3b30]/40 bg-gradient-to-r from-[#0a1f1a]/95 via-[#0d2418]/95 to-[#0f1f15]/95 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
@@ -12,39 +16,42 @@ const Header = () => {
           />
           <div className="leading-tight">
             <p className="text-xs uppercase tracking-[0.18em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(253,209,161,0.3)]">
-              World Congress of IST
+              {t('header.congress')}
             </p>
-            <p className="text-sm font-semibold bg-gradient-to-r from-[#2d3b30] to-[#ffd89b] bg-clip-text text-transparent">Toxinology • Health • Amazon</p>
+            <p className="text-sm font-semibold bg-gradient-to-r from-[#2d3b30] to-[#ffd89b] bg-clip-text text-transparent">
+              {t('header.tagline')}
+            </p>
           </div>
         </div>
         <div className="hidden gap-6 text-xs font-medium uppercase tracking-[0.18em] text-slate-200 md:flex">
           <a href="#about" className="hover:text-[#ffd89b] transition-colors">
-            Sobre
+            {t('nav.about')}
           </a>
           <a href="#program" className="hover:text-[#ffd89b] transition-colors">
-            Programação
+            {t('nav.program')}
           </a>
           <a href="#committee" className="hover:text-[#ffd89b] transition-colors">
-            Comitê
+            {t('nav.committee')}
           </a>
           <a href="#venue" className="hover:text-[#ffd89b] transition-colors">
-            Local
+            {t('nav.venue')}
           </a>
           <a href="#contact" className="hover:text-[#ffd89b] transition-colors">
-            Contato
+            {t('nav.contact')}
           </a>
         </div>
-        <a
-          href="#registration"
-          className="rounded-full bg-gradient-to-r from-[#2d3b30] to-[#753b2e] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-[#2d3b30]/50 hover:shadow-[#753b2e]/70 hover:from-[#3d4b40] hover:to-[#854b3e] transition-all md:text-[11px]"
-        >
-          Pré-inscrição
-        </a>
+        <div className="flex items-center gap-4">
+          <LanguageSwitcher />
+          <a
+            href="#registration"
+            className="rounded-full bg-gradient-to-r from-[#2d3b30] to-[#753b2e] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-[#2d3b30]/50 hover:shadow-[#753b2e]/70 hover:from-[#3d4b40] hover:to-[#854b3e] transition-all md:text-[11px]"
+          >
+            {t('nav.registration')}
+          </a>
+        </div>
       </nav>
     </header>
   )
 }
 
 export default Header
-
-

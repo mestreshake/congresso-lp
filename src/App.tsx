@@ -13,8 +13,11 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-[#0a1f1a] via-[#0d2418] to-[#0f1f15] text-slate-50">
       <Header />
 
-      <main className="mx-auto max-w-6xl px-4 pb-16 pt-10 md:px-6 md:pt-16">
-        <Hero />
+      {/* Hero com background image */}
+      <Hero />
+
+      {/* Demais seções */}
+      <main className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
         <AboutSection />
         <ProgramSection />
         <CommitteeSection />

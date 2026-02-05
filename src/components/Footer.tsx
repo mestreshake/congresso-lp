@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import istLogoWhite from '../assets/IST LOGO OFICIAL ESCOLHIDA BRANCO.png'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <footer
       id="contact"
@@ -15,19 +18,19 @@ const Footer = () => {
           />
           <div>
             <p className="text-[11px] uppercase tracking-[0.22em] text-slate-400">
-              23rd World Congress of the International Society on Toxinology
+              {t('footer.title')}
             </p>
             <p className="mt-1 text-[11px]">
-              Manaus, Amazonas • Brasil • 13–17 de setembro de 2026
+              {t('footer.location')}
             </p>
           </div>
         </div>
         <div className="text-[11px]">
           <p>
-            Contato:&nbsp;
+            {t('footer.contact')}&nbsp;
             <a
               href="mailto:ist2026.brazil@gmail.com"
-              className="font-medium text-[#ffd89b] hover:text-[#2d3b30] transition-colors"
+              className="font-medium text-[#ffd89b] hover:text-white transition-colors"
             >
               ist2026.brazil@gmail.com
             </a>
@@ -39,5 +42,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-
