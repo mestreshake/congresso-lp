@@ -33,13 +33,13 @@ const AboutSection = () => {
   const { t } = useTranslation()
 
   return (
-    <section id="about" className="mt-16 space-y-8 sm:mt-20 sm:space-y-10 md:mt-24">
+    <section id="about" className="mt-20 space-y-8 sm:mt-28 sm:space-y-10 md:mt-32">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6 }}
-        className="max-w-3xl"
+        className="rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/40 bg-[#0d4a2f]/70 p-4 sm:p-6 backdrop-blur-lg shadow-lg md:p-8"
       >
         <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
           {t('about.label')}
@@ -50,17 +50,17 @@ const AboutSection = () => {
           </span>{' '}
           {t('about.titleEnd')}
         </h2>
-        <p className="mt-4 text-sm leading-relaxed text-slate-200 md:text-[15px]">
+        <p className="mt-4 text-sm leading-relaxed text-slate-100 md:text-[15px]">
           {t('about.p1')}
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-slate-200 md:text-[15px]">
+        <p className="mt-3 text-sm leading-relaxed text-slate-100 md:text-[15px]">
           {t('about.p2Start')}{' '}
           <span className="font-semibold text-[#ffd89b]">
             {t('about.p2Theme')}
           </span>
           {t('about.p2End')}
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-slate-200 md:text-[15px]">
+        <p className="mt-3 text-sm leading-relaxed text-slate-100 md:text-[15px]">
           {t('about.p3')}
         </p>
       </motion.div>
@@ -70,7 +70,7 @@ const AboutSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/50 bg-gradient-to-br from-[#156b45]/30 via-[#ffb347]/15 to-[#2d8a5a]/25 p-4 sm:p-6 backdrop-blur-sm shadow-lg shadow-[#156b45]/20 md:p-8"
+        className="rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/40 bg-[#0d4a2f]/70 p-4 sm:p-6 backdrop-blur-lg shadow-lg md:p-8"
       >
         <div className="mb-6">
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
@@ -86,7 +86,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
             whileHover={{ scale: 1.02, y: -5 }}
-            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#2d8a5a]/50 p-4 sm:p-6 text-center cursor-default"
+            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/40 to-[#156b45]/40 border border-[#2d8a5a]/40 p-4 sm:p-6 text-center cursor-default backdrop-blur-md"
           >
             <PersonPhoto src={anaMariaPhoto} alt="Ana Maria Moura da Silva" />
             <div>
@@ -104,7 +104,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
             whileHover={{ scale: 1.02, y: -5 }}
-            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#2d8a5a]/50 p-4 sm:p-6 text-center cursor-default"
+            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/40 to-[#156b45]/40 border border-[#2d8a5a]/40 p-4 sm:p-6 text-center cursor-default backdrop-blur-md"
           >
             <PersonPhoto src={jacquelinePhoto} alt="Jacqueline de Almeida Gonçalves Sachett" />
             <div>
@@ -122,7 +122,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
             whileHover={{ scale: 1.02, y: -5 }}
-            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#2d8a5a]/50 p-4 sm:p-6 text-center cursor-default"
+            className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/40 to-[#156b45]/40 border border-[#2d8a5a]/40 p-4 sm:p-6 text-center cursor-default backdrop-blur-md"
           >
             <PhotoPlaceholder />
             <div>

@@ -139,7 +139,7 @@ const CommitteeSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+        className="flex flex-col justify-between gap-6 rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/40 bg-[#0d4a2f]/70 p-4 sm:p-6 backdrop-blur-lg shadow-lg md:p-8 md:flex-row md:items-end"
       >
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
@@ -151,7 +151,7 @@ const CommitteeSection = () => {
             </span>{' '}
             {t('committee.titleEnd')}
           </h2>
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-200 md:text-[15px]">
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-100 md:text-[15px]">
             {t('committee.intro')}
           </p>
         </div>
@@ -162,7 +162,7 @@ const CommitteeSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/50 bg-gradient-to-br from-[#156b45]/30 via-[#ffb347]/15 to-[#2d8a5a]/25 p-4 sm:p-5 backdrop-blur-sm shadow-lg shadow-[#156b45]/20 sm:grid-cols-2 md:p-6 lg:grid-cols-3"
+        className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/40 bg-[#0d4a2f]/70 p-4 sm:p-5 backdrop-blur-lg shadow-lg sm:grid-cols-2 md:p-6 lg:grid-cols-3"
       >
         {scientificCommittee.map((member, index) => (
           <motion.div
@@ -172,7 +172,7 @@ const CommitteeSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
             whileHover={{ scale: 1.02, y: -3 }}
-            className="flex items-center gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/70 to-[#156b45]/70 border border-[#2d8a5a]/50 p-3 sm:p-4 backdrop-blur-sm hover:border-[#ffb347]/50 transition-colors cursor-default"
+            className="flex items-center gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/40 to-[#156b45]/40 border border-[#2d8a5a]/40 p-3 sm:p-4 backdrop-blur-md hover:border-[#ffb347]/50 transition-colors cursor-default"
           >
             {member.photo ? (
               <MemberPhoto src={member.photo} alt={member.name} />

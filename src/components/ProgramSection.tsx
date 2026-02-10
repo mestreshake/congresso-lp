@@ -22,7 +22,7 @@ const ProgramSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6 }}
-        className="max-w-3xl"
+        className="rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/40 bg-[#0d4a2f]/70 p-4 sm:p-6 backdrop-blur-lg shadow-lg md:p-8"
       >
         <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
           {t('program.label')}
@@ -32,19 +32,11 @@ const ProgramSection = () => {
             {t('program.titleHighlight')}
           </span>
         </h2>
-        <p className="mt-4 text-sm leading-relaxed text-slate-200 md:text-[15px]">
+        <p className="mt-4 text-sm leading-relaxed text-slate-100 md:text-[15px]">
           {t('program.intro')}
         </p>
-      </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-100px' }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-6 sm:mt-8 rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/50 bg-gradient-to-br from-[#156b45]/30 via-[#ffb347]/15 to-[#2d8a5a]/25 p-4 sm:p-6 backdrop-blur-sm shadow-lg shadow-[#156b45]/20 md:p-8"
-      >
-        <ul className="space-y-4 text-sm leading-relaxed text-slate-200 md:text-[15px]">
+        <ul className="mt-6 space-y-4 text-sm leading-relaxed text-slate-100 md:text-[15px]">
           {items.map((item, index) => (
             <motion.li
               key={item}

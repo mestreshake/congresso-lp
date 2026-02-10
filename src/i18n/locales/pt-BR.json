@@ -7,9 +7,9 @@
     "contact": "Contato"
   },
   "hero": {
-    "badge": "Manaus • Amazonas • 13–17 setembro 2026",
-    "title": "23rd World Congress of the",
-    "titleHighlight": "International Society on Toxinology",
+    "badge": "PREPARE-SE!",
+    "title": "O 23rd World Congress of the International Society on Toxinology",
+    "titleHighlight": "será em Manaus!",
     "subtitle": "\"Toxinologia, saúde e Amazônia: Compartilhando experiências entre a prática clínica, a pesquisa fundamental e a inovação\".",
     "dateLabel": "Data",
     "dateValue": "13–17 setembro 2026",
@@ -25,7 +25,8 @@
     "cardTitle": "Imersão em toxinologia na maior floresta tropical do planeta.",
     "lectures": "Palestras magnas",
     "sessions": "Sessões temáticas",
-    "workshops": "Minicursos"
+    "workshops": "Minicursos",
+    "callToAction": "Atenção! O 23rd World Congress of the International Society on Toxinology será em Manaus!"
   },
   "about": {
     "label": "Sobre o congresso",

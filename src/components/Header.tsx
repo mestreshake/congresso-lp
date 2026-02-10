@@ -16,7 +16,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="sticky top-0 z-30 border-b border-[#2d8a5a]/40 bg-gradient-to-r from-[#0d4a2f]/95 via-[#156b45]/95 to-[#0d4a2f]/95 backdrop-blur-md">
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-[#2d8a5a]/30 bg-gradient-to-r from-[#0d4a2f]/80 via-[#156b45]/80 to-[#0d4a2f]/80 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
         <div className="flex items-center gap-2 sm:gap-3">
           <div className="rounded-lg bg-white/95 p-2 shadow-md">
@@ -30,7 +30,7 @@ const Header = () => {
             <p className="text-[10px] uppercase tracking-[0.14em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(253,209,161,0.3)] sm:text-xs sm:tracking-[0.18em]">
               {t('header.congress')}
             </p>
-            <p className="text-xs font-semibold bg-gradient-to-r from-[#2d3b30] to-[#ffd89b] bg-clip-text text-transparent sm:text-sm">
+            <p className="text-xs font-semibold text-white/90 sm:text-sm">
               {t('header.tagline')}
             </p>
           </div>
@@ -73,7 +73,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden border-t border-[#2d8a5a]/40 bg-gradient-to-b from-[#0d4a2f]/98 to-[#156b45]/98 backdrop-blur-md">
+        <div className="lg:hidden border-t border-[#2d8a5a]/30 bg-gradient-to-b from-[#0d4a2f]/70 to-[#156b45]/70 backdrop-blur-lg">
           <div className="flex flex-col px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <a
