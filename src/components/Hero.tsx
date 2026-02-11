@@ -192,7 +192,7 @@ const Hero = () => {
                     className="rounded-2xl border border-[#753b2e]/30 bg-black/30 px-4 py-4 backdrop-blur-sm"
                   >
                     <p className="text-2xl font-bold">
-                      <AnimatedCounter value={5} suffix="+" color="#ff8c5a" />
+                      <AnimatedCounter value={3} suffix="+" color="#ff8c5a" />
                     </p>
                     <p className="mt-1.5 text-[11px] uppercase tracking-[0.18em] text-slate-200">
                       {t('hero.workshops')}

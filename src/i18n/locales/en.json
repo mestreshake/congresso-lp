@@ -7,10 +7,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Attention • Manaus • Amazonas • September 13–17, 2026",
+    "badge": "BE READY!",
     "title": "The 23rd World Congress of the International Society on Toxinology",
     "titleHighlight": "is coming to Manaus!",
-    "subtitle": "\"Toxinology, health and the Amazon: Sharing experiences between clinical practice, fundamental research and innovation.\"",
+    "subtitle": "\"Toxinology, Health, and the Amazon: Sharing Experiences across Clinical Practice, Fundamental Research, and Innovation\"",
     "dateLabel": "Date",
     "dateValue": "September 13–17, 2026",
     "dateSub": "5 days of programming",
@@ -24,20 +24,20 @@
     "cardLocation": "Manaus • Amazonas",
     "cardTitle": "Immersion in toxinology in the world's largest tropical forest.",
     "lectures": "Plenary lectures",
-    "sessions": "Thematic sessions",
+    "sessions": "Scientific sessions",
     "workshops": "Short courses",
     "callToAction": "Attention! The 23rd World Congress of the International Society on Toxinology is coming to Manaus!"
   },
   "about": {
-    "label": "About the congress",
-    "titleHighlight": "Toxinology, health and the Amazon",
-    "titleEnd": "in global dialogue",
-    "p1": "The International Society on Toxinology (IST), founded in 1962, promotes scientific advancement in all areas of toxinology, encompassing venomous and poisonous animals, plants and microorganisms, derived toxins, envenomations, antivenom development and therapeutic and biotechnological applications of toxins. The Society connects researchers worldwide through periodic meetings that stimulate the exchange of ideas, results and collaborations.",
-    "p2Start": "In 2026, the 23rd World Congress of the International Society on Toxinology arrives in Manaus, Amazonas, for the first time in the Brazilian Amazon, a region of extraordinary biological diversity and high incidence of accidents caused by venomous animals. With the theme",
-    "p2Theme": "\"Toxinology, health and the Amazon: Sharing experiences between clinical practice, fundamental research and innovation\"",
-    "p2End": ", the congress proposes an international meeting of academic excellence, inclusive, diverse and attentive to ethical aspects.",
-    "p3": "The event will bring together scientists interested in animal biology, biochemical characterization and mechanisms of action of toxins, pathophysiology of envenomations, development of treatments and new drug candidates based on toxins, articulating basic research, innovation and clinical practice from the perspective of One Health.",
-    "presidentsLabel": "Event presidency",
+    "label": "About the Congress",
+    "titleHighlight": "Toxinology, Health, and the Amazon",
+    "titleEnd": "in Global Dialogue",
+    "p1": "The International Society on Toxinology (IST), founded in 1962, promotes scientific advancement across all areas of toxinology, encompassing venomous and poisonous animals, plants, and microorganisms, derived toxins, envenomation, antivenom development, and the therapeutic and biotechnological applications of toxins. The Society connects researchers worldwide through regular meetings that foster the exchange of ideas, scientific results, and international collaborations.",
+    "p2Start": "In 2026, the 23rd World Congress of the International Society on Toxinology will take place in Manaus, Amazonas. For the first time in the Brazilian Amazon—an area of extraordinary biological diversity and a high incidence of envenomation by venomous animals. Under the theme",
+    "p2Theme": "\"Toxinology, Health, and the Amazon: Sharing Experiences across Clinical Practice, Fundamental Research, and Innovation,\"",
+    "p2End": "the congress will provide an international forum of academic excellence that is inclusive, diverse, and attentive to ethical considerations.",
+    "p3": "The event will bring together scientists with interests in animal biology, biochemical characterization and mechanisms of action of toxins, pathophysiology of envenomation, development of treatments and novel toxin-based drug candidates, and the integration of basic research, innovation, and clinical practice within a One Health framework.",
+    "presidentsLabel": "Congress Chair",
     "president1": "Ana Maria Moura da Silva",
     "president1Aff": "Instituto Butantan, São Paulo, SP – Brazil",
     "president2": "Jacqueline de Almeida Gonçalves Sachett",
@@ -46,40 +46,43 @@
     "president3Aff": "Universidade do Estado do Amazonas & Fundação de Medicina Tropical Dr. Heitor Vieira Dourado, Manaus, AM – Brazil"
   },
   "program": {
-    "label": "Preliminary program",
-    "titleHighlight": "The event program will include:",
+    "label": "Scientific Program",
+    "titleHighlight": "The scientific program will include:",
     "intro": "",
-    "item1": "Opening ceremony including a lecture and tribute to the outstanding scientist in the field selected by IST and by previously honored scientists.",
-    "item2": "4 plenary lectures with distinguished researchers.",
-    "item3": "16 sessions, with 5 presentations: 1 main lecture of 20 min, 3 invited speakers with 15 min presentations, one of them being a young scientist, and 1 oral presentation of 10 min of a work selected from the submitted abstracts, with extra time for questions.",
-    "item4": "2 poster sessions at prime times, with presentation and evaluation of the works, subject to awards.",
-    "item5": "5 mini-courses as extracurricular activities.",
-    "item6": "Sociocultural interaction activities including the official dinner and an immersion through the scenery and cultural biodiversity of the Amazon."
+    "item1": "Opening Ceremony, including the announcement of the scientist honored with the Redi Award for outstanding contributions to the field, who will deliver the Redi Lecture on a topic of their choice.",
+    "item2": "Four Plenary Lectures delivered by internationally recognized researchers.",
+    "item3": "Sixteen Scientific Sessions, each comprising five presentations: four 20-minute invited lectures, including one Early Career Scientist, and one 10-minute oral presentation selected from submitted abstracts.",
+    "item4": "Two Poster Sessions, scheduled at prime time, with poster presentation and evaluation, eligible for awards.",
+    "item5": "Three Short Courses offered as extracurricular activities.",
+    "item6": "Social and Cultural Activities, including the official congress dinner and immersive experiences highlighting the Amazon's landscape and cultural biodiversity."
+  },
+  "organizingCommittee": {
+    "label": "Organizing Committee"
   },
   "committee": {
-    "label": "Scientific committee",
-    "titleHighlight": "International references",
-    "titleEnd": "in toxinology",
-    "intro": "The scientific committee brings together specialists from different continents, working in institutions of excellence and on multiple fronts of toxinology, from basic research to clinical and biotechnological applications."
+    "label": "Scientific Committee",
+    "titleHighlight": "International Leaders",
+    "titleEnd": "in Toxinology",
+    "intro": "The Scientific Committee brings together experts from different continents, affiliated with leading institutions and active across multiple areas of toxinology, ranging from basic research to clinical and biotechnological applications."
   },
   "venue": {
-    "label": "Event venue",
+    "label": "Venue",
     "titleHighlight": "Hotel Tropical, Manaus",
-    "titleEnd": "– Gateway to the Amazon rainforest",
-    "p1": "The congress will be held at Hotel Tropical, in Manaus, combining infrastructure for large events with direct contact with Amazon nature. The privileged location favors both scientific activities and cultural and environmental immersion experiences.",
+    "titleEnd": "– Gateway to the Amazon Rainforest",
+    "p1": "The congress will be held at the Hotel Tropical, in Manaus, a venue that combines infrastructure suitable for large-scale scientific events with direct contact with the Amazonian natural environment. Its privileged location offers an ideal setting for scientific activities while also enabling cultural experiences and opportunities for environmental immersion.",
     "addressLabel": "Address",
     "openMaps": "Open in Google Maps"
   },
   "registration": {
     "label": "Registration",
     "comingSoonBadge": "Coming soon",
-    "titleHighlight": "Registration opening soon",
-    "subtitle": "We're preparing everything for you! Registration will open soon with fees, modalities and complete schedule.",
-    "p1": "Registration modalities will include professionals, students, IST members and other participants, with differentiated fees by category and date ranges (early, regular and late).",
-    "p2": "Guidelines for abstract submission and presentation modalities will also be announced soon.",
-    "emailLabel": "Contact email",
-    "updatesLabel": "Upcoming updates",
-    "update1": "Registration opening",
+    "titleHighlight": "Registration Opening Soon",
+    "subtitle": "Registration for the 23rd World Congress of the International Society on Toxinology will open soon. Detailed information regarding registration fees, registration categories, and the complete schedule will be made available in due course.",
+    "p1": "Registration categories will include professionals, students, IST members, and non-members, with differentiated fees according to category and registration period (early registration, regular registration, and late/on-site registration).",
+    "p2": "Information on abstract submission guidelines, including presentation modalities (oral and poster), will also be announced shortly.",
+    "emailLabel": "Contact",
+    "updatesLabel": "Upcoming Updates",
+    "update1": "Opening of registration",
     "update2": "Abstract submission",
     "update3": "Workshops and short courses"
   },
@@ -100,5 +103,19 @@
   "header": {
     "congress": "World Congress of IST",
     "tagline": "Toxinology • Health • Amazon"
+  },
+  "countries": {
+    "brazil": "Brazil",
+    "russia": "Russia",
+    "costaRica": "Costa Rica",
+    "uk": "UK",
+    "taiwan": "Taiwan",
+    "mexico": "Mexico",
+    "australia": "Australia",
+    "india": "India",
+    "usa": "USA",
+    "italy": "Italy",
+    "egypt": "Egypt",
+    "germany": "Germany"
   }
 }

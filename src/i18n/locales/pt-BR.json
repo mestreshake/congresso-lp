@@ -49,12 +49,15 @@
     "label": "Programação preliminar",
     "titleHighlight": "A programação do evento incluirá:",
     "intro": "",
-    "item1": "Cerimônia de abertura que inclui palestra e homenagem ao cientista de destaque na área selecionado pela IST e por cientistas previamente homenageados.",
+    "item1": "Cerimônia de abertura que inclui o anúncio do cientista homenageado com o \"Redi Award\" pelo seu destaque na área, que apresentará a \"Redi Lecture\" em um tema de sua escolha.",
     "item2": "4 palestras magnas com pesquisadores de grande destaque.",
-    "item3": "16 sessões, com 5 apresentações: 1 palestra principal de 20 min, 3 palestrantes convidados com apresentações de 15 min, sendo um deles um jovem cientista, e 1 apresentação oral de 10 min de um trabalho selecionado entre os resumos apresentados, com tempo extra para perguntas.",
+    "item3": "16 sessões, com 5 apresentações: 4 palestras de 20 min, sendo um deles um jovem cientista, e 1 apresentação oral de 10 min de um trabalho selecionado entre os resumos apresentados.",
     "item4": "2 sessões de pôsteres em horários nobres, com apresentação e avaliação dos trabalhos, sujeitos a premiação.",
-    "item5": "5 minicursos como atividade extracurricular.",
+    "item5": "3 minicursos como atividade extracurricular.",
     "item6": "Atividades de interação sociocultural incluindo o jantar oficial e uma imersão pelo cenário e biodiversidade cultural da Amazônia."
+  },
+  "organizingCommittee": {
+    "label": "Comitê organizador"
   },
   "committee": {
     "label": "Comitê científico",
@@ -100,5 +103,19 @@
   "header": {
     "congress": "World Congress of IST",
     "tagline": "Toxinology • Health • Amazon"
+  },
+  "countries": {
+    "brazil": "Brasil",
+    "russia": "Rússia",
+    "costaRica": "Costa Rica",
+    "uk": "Reino Unido",
+    "taiwan": "Taiwan",
+    "mexico": "México",
+    "australia": "Austrália",
+    "india": "Índia",
+    "usa": "USA",
+    "italy": "Itália",
+    "egypt": "Egito",
+    "germany": "Alemanha"
   }
 }
