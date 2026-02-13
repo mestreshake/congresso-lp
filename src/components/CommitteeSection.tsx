@@ -194,14 +194,7 @@ const PersonPhoto = ({ src, alt }: { src: string; alt: string }) => (
   </div>
 )
 
-// Placeholder de foto para presidente (ícone de pessoa)
-const PresidentPlaceholder = () => (
-  <div className="flex h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 items-center justify-center rounded-full bg-gradient-to-br from-[#2d3b30]/50 to-[#1a2f20]/50 border-2 border-[#ffd89b]/30 flex-shrink-0 shadow-lg">
-    <svg className="h-12 w-12 sm:h-14 sm:w-14 text-[#ffd89b]/50" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-    </svg>
-  </div>
-)
+
 
 const CommitteeSection = () => {
   const { t } = useTranslation()
