@@ -49,9 +49,9 @@ const organizingCommittee = [
     photo: null,
   },
   {
-    name: 'Fernanda',
-    affiliation: '',
-    countryKey: '',
+    name: 'Fernanda Cardoso',
+    affiliation: 'University of Queensland',
+    countryKey: 'countries.brazil',
     photo: null,
   },
 ]
