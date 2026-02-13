@@ -4,7 +4,7 @@ import * as motion from 'motion/react-client'
 // Fotos dos presidentes
 import anaMariaPresidentPhoto from '../assets/pessoas/AnaMoura_Photo.jpg'
 import jacquelinePhoto from '../assets/pessoas/jacqueline.jpeg'
-// import wueltonPhoto from '../assets/pessoas/wuelton.jpg' // Adicione quando tiver
+import wueltonPhoto from '../assets/pessoas/welton.png'
 
 // Importar fotos dos membros do comitê
 import anaMariaPhoto from '../assets/pessoas/AnaMoura_Photo.jpg'
@@ -22,7 +22,7 @@ const organizingCommittee = [
     name: 'Wuelton M. Monteiro',
     affiliation: 'Universidade do Estado do Amazonas / Fundação de Medicina Tropical Dr. Heitor Vieira Dourado, Amazonas',
     countryKey: 'countries.brazil',
-    photo: null,
+    photo: wueltonPhoto,
   },
   {
     name: 'Ana Maria Moura da Silva',
@@ -153,7 +153,7 @@ const scientificCommittee = [
     affiliation:
       'Universidade do Estado do Amazonas / Fundação de Medicina Tropical Dr. Heitor Vieira Dourado, Amazonas',
     countryKey: 'countries.brazil',
-    photo: null,
+    photo: wueltonPhoto,
   },
 ]
 
@@ -268,7 +268,7 @@ const CommitteeSection = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             className="flex h-full min-h-[180px] sm:min-h-[220px] flex-col items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/40 to-[#156b45]/40 border border-[#2d8a5a]/40 p-4 sm:p-6 text-center cursor-default backdrop-blur-md"
           >
-            <PresidentPlaceholder />
+            <PersonPhoto src={wueltonPhoto} alt="Wuelton M. Monteiro" />
             <div>
               <p className="text-sm sm:text-base font-semibold text-white">{t('about.president3')}</p>
               <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-slate-300">
