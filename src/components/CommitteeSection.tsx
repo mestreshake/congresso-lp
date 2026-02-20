@@ -107,7 +107,7 @@ const scientificCommittee = [
   },
   {
     name: 'Juliana Zuliani',
-    affiliation: 'FIOCRUZ-RO e Universidade Federal de Rondônia, Porto Velho',
+    affiliationKey: 'committee.julianaAffiliation',
     countryKey: 'countries.brazil',
     photo: julianaPhoto,
   },
@@ -359,7 +359,9 @@ const CommitteeSection = () => {
               )}
               <div className="min-w-0 flex-1">
                 <p className="text-sm font-semibold text-white">{member.name}</p>
-                <p className="mt-0.5 text-[11px] sm:text-xs text-slate-200 line-clamp-3">{member.affiliation}</p>
+                <p className="mt-0.5 text-[11px] sm:text-xs text-slate-200 line-clamp-3">
+                  {member.affiliationKey ? t(member.affiliationKey) : member.affiliation}
+                </p>
                 <p className="mt-1 text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.18em] text-[#ffd89b] drop-shadow-[0_0_2px_rgba(255,216,155,0.3)]">
                   {t(member.countryKey)}
                 </p>
