@@ -107,7 +107,7 @@ const scientificCommittee = [
   },
   {
     name: 'Juliana Zuliani',
-    affiliation: 'Universidade Federal de Rondônia, Porto Velho',
+    affiliation: 'FIOCRUZ-RO e Universidade Federal de Rondônia, Porto Velho',
     countryKey: 'countries.brazil',
     photo: julianaPhoto,
   },
