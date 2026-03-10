@@ -16,6 +16,7 @@ import ornellaPhoto from '../assets/pessoas/ornela.png'
 import kartikPhoto from '../assets/pessoas/kartik.png'
 import corzoPhoto from '../assets/pessoas/corzo.png'
 import tarekPhoto from '../assets/pessoas/tarek.png'
+import timLuddPhoto from '../assets/pessoas/timludd.jpeg'
 
 const organizingCommittee = [
   {
@@ -46,7 +47,7 @@ const organizingCommittee = [
     name: 'Tim Lüddecke',
     affiliation: 'Fraunhofer Institute for Molecular Biology and Applied Ecology, Gießen',
     countryKey: 'countries.germany',
-    photo: null,
+    photo: timLuddPhoto,
   },
   {
     name: 'Fernanda Cardoso',
@@ -146,7 +147,7 @@ const scientificCommittee = [
     affiliation:
       'Fraunhofer Institute for Molecular Biology and Applied Ecology, Gießen',
     countryKey: 'countries.germany',
-    photo: null,
+    photo: timLuddPhoto,
   },
   {
     name: 'Wuelton M. Monteiro',
