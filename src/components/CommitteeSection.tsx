@@ -17,6 +17,8 @@ import kartikPhoto from '../assets/pessoas/kartik.png'
 import corzoPhoto from '../assets/pessoas/corzo.png'
 import tarekPhoto from '../assets/pessoas/tarek.png'
 import timLuddPhoto from '../assets/pessoas/timludd.jpeg'
+import chooPhoto from '../assets/pessoas/chook.jpeg'
+import lewinPhoto from '../assets/pessoas/lewin.jpeg'
 
 const organizingCommittee = [
   {
@@ -41,7 +43,7 @@ const organizingCommittee = [
     name: 'Matthew Lewin',
     affiliation: 'California Academy of Sciences, Corte Madera',
     countryKey: 'countries.usa',
-    photo: null,
+    photo: lewinPhoto,
   },
   {
     name: 'Tim Lüddecke',
@@ -86,7 +88,7 @@ const scientificCommittee = [
     name: 'Choo Hock Tan',
     affiliation: 'National Tsing Hua University, Taiwan',
     countryKey: 'countries.taiwan',
-    photo: null,
+    photo: chooPhoto,
   },
   {
     name: 'Fan Hui Wen',
@@ -122,7 +124,7 @@ const scientificCommittee = [
     name: 'Matthew Lewin',
     affiliation: 'California Academy of Sciences, Corte Madera',
     countryKey: 'countries.usa',
-    photo: null,
+    photo: lewinPhoto,
   },
   {
     name: 'Ornella Rossetto',
