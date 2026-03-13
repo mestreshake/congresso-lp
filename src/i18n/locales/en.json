@@ -54,7 +54,57 @@
     "item3": "Sixteen Scientific Sessions, each comprising five presentations: four 20-minute invited lectures, including one Early Career Scientist, and one 10-minute oral presentation selected from submitted abstracts.",
     "item4": "Two Poster Sessions, scheduled at prime time, with poster presentation and evaluation, eligible for awards.",
     "item5": "Three Short Courses offered as extracurricular activities.",
-    "item6": "Social and Cultural Activities, including the official congress dinner and immersive experiences highlighting the Amazon's landscape and cultural biodiversity."
+    "item6": "Social and Cultural Activities, including the official congress dinner and immersive experiences highlighting the Amazon's landscape and cultural biodiversity.",
+    "scheduleTitle": "Preliminary Timetable",
+    "scheduleHint": "Subject to refinement in the final program.",
+    "schedule": {
+      "days": {
+        "sun": { "date": "September 13th", "day": "Sunday" },
+        "mon": { "date": "September 14th", "day": "Monday" },
+        "tue": { "date": "September 15th", "day": "Tuesday" },
+        "wed": { "date": "September 16th", "day": "Wednesday" },
+        "thu": { "date": "September 17th", "day": "Thursday" }
+      },
+      "times": {
+        "slot1": "9:00 - 9:50",
+        "slot2": "9:50 - 10:15",
+        "slot3": "10:15 - 12:00",
+        "slot4": "12:00 - 12:30",
+        "slot5": "12:30 - 14:00",
+        "slot6": "14:00 - 15:45",
+        "slot7": "15:45 - 16:15",
+        "slot8": "16:15 - 18:30",
+        "slot9": "Evening Program"
+      },
+      "events": {
+        "plenary1": "Plenary lecture 1",
+        "plenary2": "Plenary lecture 2",
+        "plenary3": "Plenary lecture 3",
+        "plenary4": "Plenary lecture 4",
+        "coffeeBreak": "Coffee break",
+        "miniCourses": "Extracurricular mini courses",
+        "concurrent12": "Concurrent sessions 1 and 2",
+        "concurrent34": "Concurrent sessions 3 and 4",
+        "concurrent56": "Concurrent sessions 5 and 6",
+        "concurrent78": "Concurrent sessions 7 and 8",
+        "sponsors": "Sponsors and Scientific Societies presentations",
+        "lunch": "Lunch",
+        "registration": "Registration",
+        "concurrent910": "Concurrent sessions 9 and 10",
+        "socioCultural": "Socio-cultural interaction and Amazon immersion",
+        "poster2": "Poster session 2",
+        "concurrent1112": "Concurrent sessions 11 and 12",
+        "coffeeSnacks": "Coffee and snacks",
+        "concurrent1314": "Concurrent sessions 13 and 14",
+        "concurrent1516": "Concurrent sessions 15 and 16",
+        "welcomeCeremony": "Welcome ceremony and Redi Award presentation",
+        "poster1": "Poster session 1",
+        "welcomeReception": "Welcome reception",
+        "istAgm": "IST AGM (18:30 - 20:00)",
+        "banquet": "Conference banquet (19:30 - 22:00)",
+        "closingCeremony": "Closing ceremony and awards (18:00 - 18:30)"
+      }
+    }
   },
   "organizingCommittee": {
     "label": "Organizing Committee"
@@ -64,7 +114,9 @@
     "titleHighlight": "International Leaders",
     "titleEnd": "in Toxinology",
     "intro": "The Scientific Committee brings together experts from different continents, affiliated with leading institutions and active across multiple areas of toxinology, ranging from basic research to clinical and biotechnological applications.",
-    "julianaAffiliation": "FIOCRUZ-RO and Universidade Federal de Rondônia, Porto Velho"
+    "julianaAffiliation": "FIOCRUZ-RO and Universidade Federal de Rondônia, Porto Velho",
+    "confirmedLabel": "Confirmed Speakers",
+    "confirmedTitle": "Speakers already confirmed"
   },
   "venue": {
     "label": "Venue",
@@ -76,11 +128,51 @@
   },
   "registration": {
     "label": "Registration",
-    "comingSoonBadge": "Coming soon",
+    "comingSoonBadge": "Opens Apr 1",
     "titleHighlight": "Registration Opening Soon",
     "subtitle": "Registration for the 23rd World Congress of the International Society on Toxinology will open soon. Detailed information regarding registration fees, registration categories, and the complete schedule will be made available in due course.",
+    "openingLabel": "Registration opens on",
+    "openingDate": "April 1st",
     "p1": "Registration categories will include professionals, students, IST members, and non-members, with differentiated fees according to category and registration period (early registration, regular registration, and late/on-site registration).",
     "p2": "Information on abstract submission guidelines, including presentation modalities (oral and poster), will also be announced shortly.",
+    "feesTitle": "Registration Fees (USD)",
+    "fees": {
+      "category": "Category",
+      "earlyBird": "Early Bird (Until May 31)",
+      "regular": "Regular (June 1 to Sep 11)",
+      "onSite": "On-site (September)",
+      "notes": "Requirements / Notes",
+      "rows": {
+        "istMember": {
+          "label": "IST Member",
+          "earlyBird": "USD 550",
+          "regular": "USD 650",
+          "onSite": "USD 750",
+          "notes": "Active membership required."
+        },
+        "nonMember": {
+          "label": "Non-Member",
+          "earlyBird": "USD 700",
+          "regular": "USD 800",
+          "onSite": "USD 900",
+          "notes": "Open to all professionals."
+        },
+        "studentMember": {
+          "label": "Student Member",
+          "earlyBird": "USD 300",
+          "regular": "USD 350",
+          "onSite": "USD 400",
+          "notes": "Proof of enrollment + IST ID."
+        },
+        "galaDinner": {
+          "label": "Gala Dinner",
+          "earlyBird": "USD 60",
+          "regular": "USD 60",
+          "onSite": "USD 60",
+          "notes": ""
+        }
+      }
+    },
     "emailLabel": "Contact",
     "updatesLabel": "Upcoming Updates",
     "update1": "Opening of registration",

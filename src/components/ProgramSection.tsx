@@ -14,6 +14,64 @@ const ProgramSection = () => {
   const { t } = useTranslation()
 
   const items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']
+  const scheduleColumns = ['sun', 'mon', 'tue', 'wed', 'thu'] as const
+  const scheduleRows = [
+    {
+      time: 'slot1',
+      cells: ['', 'plenary1', 'plenary2', 'plenary3', 'plenary4'],
+      tones: ['', 'green', 'green', 'green', 'green'],
+    },
+    {
+      time: 'slot2',
+      cells: ['', 'coffeeBreak', 'coffeeBreak', 'coffeeBreak', 'coffeeBreak'],
+      tones: ['', 'gray', 'gray', 'gray', 'gray'],
+    },
+    {
+      time: 'slot3',
+      cells: ['miniCourses', 'concurrent12', 'concurrent34', 'concurrent56', 'concurrent78'],
+      tones: ['white', 'white', 'white', 'white', 'white'],
+    },
+    {
+      time: 'slot4',
+      cells: ['', 'sponsors', 'sponsors', 'sponsors', 'sponsors'],
+      tones: ['', 'blue', 'blue', 'blue', 'blue'],
+    },
+    {
+      time: 'slot5',
+      cells: ['', 'lunch', 'lunch', 'lunch', 'lunch'],
+      tones: ['', 'white', 'white', 'white', 'white'],
+    },
+    {
+      time: 'slot6',
+      cells: ['registration', 'concurrent910', 'socioCultural', 'poster2', 'concurrent1112'],
+      tones: ['white', 'white', 'purple', 'yellow', 'white'],
+    },
+    {
+      time: 'slot7',
+      cells: ['', 'coffeeSnacks', 'socioCultural', 'coffeeBreak', ''],
+      tones: ['', 'white', 'purple', 'white', ''],
+    },
+    {
+      time: 'slot8',
+      cells: ['welcomeCeremony', 'poster1', 'socioCultural', 'concurrent1314', 'concurrent1516'],
+      tones: ['green', 'yellow', 'purple', 'white', 'white'],
+    },
+    {
+      time: 'slot9',
+      cells: ['welcomeReception', 'istAgm', 'socioCultural', 'banquet', 'closingCeremony'],
+      tones: ['purple', 'green', 'purple', 'purple', 'green'],
+    },
+  ] as const
+
+  const toneClasses: Record<string, string> = {
+    green: 'bg-[#8abd6d] text-[#102116]',
+    gray: 'bg-[#c8d1d7] text-[#1f2a30]',
+    blue: 'bg-[#88cbe6] text-[#11212a]',
+    yellow: 'bg-[#f8cb2c] text-[#352a00]',
+    purple: 'bg-[#c791c8] text-[#231528]',
+    white: 'bg-white/95 text-[#17212b]',
+    '': 'bg-transparent text-slate-300',
+  }
 
   return (
     <section id="program" className="mt-16 sm:mt-20 md:mt-24">
@@ -54,6 +112,53 @@ const ProgramSection = () => {
             </motion.li>
           ))}
         </ul>
+
+        <div className="mt-8 rounded-2xl border border-[#2d8a5a]/45 bg-[#0b3d27]/55 p-3 sm:p-4">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#ffd89b]">
+            {t('program.scheduleTitle')}
+          </p>
+          <p className="mt-2 text-xs text-slate-300">{t('program.scheduleHint')}</p>
+
+          <div className="mt-4 overflow-x-auto">
+            <table className="min-w-[980px] w-full border-separate border-spacing-1 text-center text-xs">
+              <thead>
+                <tr>
+                  <th className="w-[130px]" />
+                  {scheduleColumns.map((column) => (
+                    <th
+                      key={column}
+                      className="rounded-md bg-[#d97732] px-2 py-2 text-[#1f140a]"
+                    >
+                      <p className="text-[11px] font-semibold">
+                        {t(`program.schedule.days.${column}.date`)}
+                      </p>
+                      <p className="mt-1 text-[11px]">
+                        {t(`program.schedule.days.${column}.day`)}
+                      </p>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {scheduleRows.map((row) => (
+                  <tr key={row.time}>
+                    <td className="pr-2 text-left font-medium text-slate-200">
+                      {t(`program.schedule.times.${row.time}`)}
+                    </td>
+                    {row.cells.map((cell, index) => (
+                      <td
+                        key={`${row.time}-${index}`}
+                        className={`rounded-md px-2 py-3 align-middle ${toneClasses[row.tones[index]]}`}
+                      >
+                        {cell ? t(`program.schedule.events.${cell}`) : ''}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </motion.div>
     </section>
   )

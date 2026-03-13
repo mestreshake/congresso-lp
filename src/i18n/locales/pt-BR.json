@@ -54,7 +54,57 @@
     "item3": "16 sessões, com 5 apresentações: 4 palestras de 20 min, sendo um deles um jovem cientista, e 1 apresentação oral de 10 min de um trabalho selecionado entre os resumos apresentados.",
     "item4": "2 sessões de pôsteres em horários nobres, com apresentação e avaliação dos trabalhos, sujeitos a premiação.",
     "item5": "3 minicursos como atividade extracurricular.",
-    "item6": "Atividades de interação sociocultural incluindo o jantar oficial e uma imersão pelo cenário e biodiversidade cultural da Amazônia."
+    "item6": "Atividades de interação sociocultural incluindo o jantar oficial e uma imersão pelo cenário e biodiversidade cultural da Amazônia.",
+    "scheduleTitle": "Grade preliminar",
+    "scheduleHint": "Sujeita a ajustes na programação final.",
+    "schedule": {
+      "days": {
+        "sun": { "date": "13 de setembro", "day": "Domingo" },
+        "mon": { "date": "14 de setembro", "day": "Segunda-feira" },
+        "tue": { "date": "15 de setembro", "day": "Terça-feira" },
+        "wed": { "date": "16 de setembro", "day": "Quarta-feira" },
+        "thu": { "date": "17 de setembro", "day": "Quinta-feira" }
+      },
+      "times": {
+        "slot1": "9:00 - 9:50",
+        "slot2": "9:50 - 10:15",
+        "slot3": "10:15 - 12:00",
+        "slot4": "12:00 - 12:30",
+        "slot5": "12:30 - 14:00",
+        "slot6": "14:00 - 15:45",
+        "slot7": "15:45 - 16:15",
+        "slot8": "16:15 - 18:30",
+        "slot9": "Programa noturno"
+      },
+      "events": {
+        "plenary1": "Palestra magna 1",
+        "plenary2": "Palestra magna 2",
+        "plenary3": "Palestra magna 3",
+        "plenary4": "Palestra magna 4",
+        "coffeeBreak": "Intervalo para café",
+        "miniCourses": "Minicursos extracurriculares",
+        "concurrent12": "Sessões concorrentes 1 e 2",
+        "concurrent34": "Sessões concorrentes 3 e 4",
+        "concurrent56": "Sessões concorrentes 5 e 6",
+        "concurrent78": "Sessões concorrentes 7 e 8",
+        "sponsors": "Patrocinadores e sociedades científicas",
+        "lunch": "Almoço",
+        "registration": "Credenciamento",
+        "concurrent910": "Sessões concorrentes 9 e 10",
+        "socioCultural": "Interação sociocultural e imersão amazônica",
+        "poster2": "Sessão de pôster 2",
+        "concurrent1112": "Sessões concorrentes 11 e 12",
+        "coffeeSnacks": "Café e lanches",
+        "concurrent1314": "Sessões concorrentes 13 e 14",
+        "concurrent1516": "Sessões concorrentes 15 e 16",
+        "welcomeCeremony": "Cerimônia de abertura e Redi Award",
+        "poster1": "Sessão de pôster 1",
+        "welcomeReception": "Coquetel de boas-vindas",
+        "istAgm": "Assembleia IST (18:30 - 20:00)",
+        "banquet": "Jantar oficial (19:30 - 22:00)",
+        "closingCeremony": "Encerramento e premiação (18:00 - 18:30)"
+      }
+    }
   },
   "organizingCommittee": {
     "label": "Comitê organizador"
@@ -64,7 +114,9 @@
     "titleHighlight": "Referências internacionais",
     "titleEnd": "em toxinologia",
     "intro": "O comitê científico reúne especialistas de diferentes continentes, atuando em instituições de excelência e em múltiplas frentes da toxinologia, desde pesquisa básica até aplicações clínicas e biotecnológicas.",
-    "julianaAffiliation": "FIOCRUZ-RO e Universidade Federal de Rondônia, Porto Velho"
+    "julianaAffiliation": "FIOCRUZ-RO e Universidade Federal de Rondônia, Porto Velho",
+    "confirmedLabel": "Palestrantes confirmados",
+    "confirmedTitle": "Palestrantes que já confirmaram participação"
   },
   "venue": {
     "label": "Local do evento",
@@ -76,11 +128,51 @@
   },
   "registration": {
     "label": "Inscrições",
-    "comingSoonBadge": "Em breve",
+    "comingSoonBadge": "Abertura 01/04",
     "titleHighlight": "Inscrições abrindo em breve",
     "subtitle": "Estamos preparando tudo para você! As inscrições serão abertas em breve com valores, modalidades e cronograma completo.",
+    "openingLabel": "Início das inscrições",
+    "openingDate": "01/04",
     "p1": "As modalidades de inscrição contemplarão profissionais, estudantes, membros da IST e demais participantes, com valores diferenciados por categoria e faixas de data (early, regular e late).",
     "p2": "Diretrizes para submissão de resumos e modalidades de apresentação também serão divulgadas em breve.",
+    "feesTitle": "Tabela de valores (USD)",
+    "fees": {
+      "category": "Categoria",
+      "earlyBird": "Early Bird (até 31 de maio)",
+      "regular": "Regular (1 de jun a 11 de set)",
+      "onSite": "On-site (setembro)",
+      "notes": "Requisitos / observações",
+      "rows": {
+        "istMember": {
+          "label": "Membro IST",
+          "earlyBird": "USD 550",
+          "regular": "USD 650",
+          "onSite": "USD 750",
+          "notes": "Necessário ter filiação ativa."
+        },
+        "nonMember": {
+          "label": "Não membro",
+          "earlyBird": "USD 700",
+          "regular": "USD 800",
+          "onSite": "USD 900",
+          "notes": "Aberto a profissionais em geral."
+        },
+        "studentMember": {
+          "label": "Membro estudante",
+          "earlyBird": "USD 300",
+          "regular": "USD 350",
+          "onSite": "USD 400",
+          "notes": "Comprovante de matrícula + ID IST."
+        },
+        "galaDinner": {
+          "label": "Jantar de gala",
+          "earlyBird": "USD 60",
+          "regular": "USD 60",
+          "onSite": "USD 60",
+          "notes": ""
+        }
+      }
+    },
     "emailLabel": "E-mail para contato",
     "updatesLabel": "Próximas atualizações",
     "update1": "Abertura das inscrições",

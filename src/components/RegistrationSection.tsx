@@ -3,6 +3,7 @@ import * as motion from 'motion/react-client'
 
 const RegistrationSection = () => {
   const { t } = useTranslation()
+  const priceRows = ['istMember', 'nonMember', 'studentMember', 'galaDinner'] as const
 
   return (
     <section id="registration" className="mt-16 sm:mt-20 md:mt-24">
@@ -58,11 +59,81 @@ const RegistrationSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            className="mt-5 rounded-xl border border-[#ffd89b]/45 bg-[#1a613d]/45 p-4 shadow-[0_0_24px_rgba(255,216,155,0.18)]"
+          >
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#ffd89b]">
+              {t('registration.openingLabel')}
+            </p>
+            <p className="mt-1 text-lg font-bold text-white sm:text-xl">
+              {t('registration.openingDate')}
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-6 space-y-3 text-sm leading-relaxed text-slate-200 md:text-[15px]"
           >
             <p>{t('registration.p1')}</p>
             <p>{t('registration.p2')}</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.45 }}
+            className="mt-6 rounded-xl border border-[#ffd89b]/35 bg-[#0b3d27]/65 p-3 sm:p-4 shadow-[0_0_30px_rgba(255,179,71,0.16)]"
+          >
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#ffd89b] sm:text-sm">
+              {t('registration.feesTitle')}
+            </p>
+            <div className="mt-3 overflow-x-auto md:overflow-visible">
+              <table className="min-w-[840px] w-full border-separate border-spacing-0 text-left text-sm text-slate-100 md:min-w-full">
+                <thead>
+                  <tr>
+                    <th className="border border-[#ffd89b]/45 bg-[#1a613d] px-3 py-2 font-semibold">
+                      {t('registration.fees.category')}
+                    </th>
+                    <th className="border border-[#ffd89b]/45 bg-[#1a613d] px-3 py-2 font-semibold">
+                      {t('registration.fees.earlyBird')}
+                    </th>
+                    <th className="border border-[#ffd89b]/45 bg-[#1a613d] px-3 py-2 font-semibold">
+                      {t('registration.fees.regular')}
+                    </th>
+                    <th className="border border-[#ffd89b]/45 bg-[#1a613d] px-3 py-2 font-semibold">
+                      {t('registration.fees.onSite')}
+                    </th>
+                    <th className="border border-[#ffd89b]/45 bg-[#1a613d] px-3 py-2 font-semibold">
+                      {t('registration.fees.notes')}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {priceRows.map((row) => (
+                    <tr key={row}>
+                      <td className="border border-[#ffd89b]/25 bg-[#0d4a2f]/70 px-3 py-2 font-semibold text-white">
+                        {t(`registration.fees.rows.${row}.label`)}
+                      </td>
+                      <td className="border border-[#ffd89b]/25 bg-[#0d4a2f]/55 px-3 py-2 font-medium">
+                        {t(`registration.fees.rows.${row}.earlyBird`)}
+                      </td>
+                      <td className="border border-[#ffd89b]/25 bg-[#0d4a2f]/55 px-3 py-2 font-medium">
+                        {t(`registration.fees.rows.${row}.regular`)}
+                      </td>
+                      <td className="border border-[#ffd89b]/25 bg-[#0d4a2f]/55 px-3 py-2 font-medium">
+                        {t(`registration.fees.rows.${row}.onSite`)}
+                      </td>
+                      <td className="border border-[#ffd89b]/25 bg-[#0d4a2f]/55 px-3 py-2 text-slate-200">
+                        {t(`registration.fees.rows.${row}.notes`)}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </motion.div>
 
           {/* Informações de contato */}

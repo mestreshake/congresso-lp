@@ -160,6 +160,129 @@ const scientificCommittee = [
   },
 ]
 
+const confirmedSpeakers = [
+  {
+    name: 'Adolfo Borges',
+    affiliation: 'Centro Desarrollo de la Investigación Científica, Paraguay',
+    photo: null,
+  },
+  {
+    name: 'Alexander Vassilevski',
+    affiliation: 'Russian Academy of Sciences, Russia',
+    photo: null,
+  },
+  {
+    name: 'Ana Moura da Silva',
+    affiliation: 'Instituto Butantan, São Paulo, Brasil',
+    photo: anaMariaPhoto,
+  },
+  {
+    name: 'Cassandra Modhal',
+    affiliation: 'Liverpool School of Tropical Medicine, UK',
+    photo: cassandraModhalPhoto,
+  },
+  {
+    name: 'Choo Hock Tan',
+    affiliation: 'National Tsing Hua University, Taiwan',
+    photo: chooPhoto,
+  },
+  {
+    name: 'Denise Tambourgi',
+    affiliation: 'Instituto Butantan, Brasil',
+    photo: null,
+  },
+  {
+    name: 'Eivind Undheim',
+    affiliation: 'Department of Biosciences, University of Oslo, Oslo, Norway',
+    photo: null,
+  },
+  {
+    name: 'Flavio Santos Dourado',
+    affiliation: 'Ministério da Saúde, Brasil',
+    photo: null,
+  },
+  {
+    name: 'Glenn King',
+    affiliation: 'The University of Queensland, Australia',
+    photo: null,
+  },
+  {
+    name: 'Jeroen Kool',
+    affiliation: 'Vrije Universiteit Amsterdam',
+    photo: null,
+  },
+  {
+    name: 'Johannes Eble',
+    affiliation: 'University of Münster, Germany',
+    photo: null,
+  },
+  {
+    name: 'Juliana Zuliani',
+    affiliation: 'Universidade Federal de Rondônia, Brasil',
+    photo: julianaPhoto,
+  },
+  {
+    name: 'Leticia Lotufo',
+    affiliation: 'Universidade Federal do Ceará, Brazil',
+    photo: null,
+  },
+  {
+    name: 'Luiza Gremski',
+    affiliation: 'Universidade Federal do Paraná, Brazil',
+    photo: null,
+  },
+  {
+    name: 'Marcos Fontes',
+    affiliation: 'Universidade Estadual Paulista - Botucatu, Brazil',
+    photo: null,
+  },
+  {
+    name: 'Matthew Lewin',
+    affiliation: 'California Academy of Sciences, USA',
+    photo: lewinPhoto,
+  },
+  {
+    name: 'Melisa Benard Valle',
+    affiliation: 'UNAM / DTU Bioengineering, Denmark',
+    photo: null,
+  },
+  {
+    name: 'Nick Casewell',
+    affiliation: 'Liverpool School of Tropical Medicine, UK',
+    photo: null,
+  },
+  {
+    name: 'Ray Norton',
+    affiliation: 'Monash Institute of Pharmaceutical Sciences, Australia',
+    photo: null,
+  },
+  {
+    name: 'Ronald Jenner',
+    affiliation: 'Natural History Museum, London, UK',
+    photo: null,
+  },
+  {
+    name: 'Solange M. T. Serrano',
+    affiliation: 'Instituto Butantan, Brazil',
+    photo: solangeSerranoPhoto,
+  },
+  {
+    name: 'Steve Peigneur',
+    affiliation: 'University of Vienna, Austria',
+    photo: null,
+  },
+  {
+    name: 'Wuelton Monteiro',
+    affiliation: 'Universidade do Estado do Amazonas, Brasil',
+    photo: wueltonPhoto,
+  },
+  {
+    name: 'Ymkje Stienstra',
+    affiliation: 'University Medical Centre Groningen, The Netherlands',
+    photo: null,
+  },
+]
+
 // Componente de foto com proporção fixa e alta qualidade
 const MemberPhoto = ({ src, alt }: { src: string; alt: string }) => (
   <div className="h-16 w-16 sm:h-20 sm:w-20 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#ffd89b]/30 shadow-md">
@@ -367,6 +490,50 @@ const CommitteeSection = () => {
                 </p>
                 <p className="mt-1 text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.18em] text-[#ffd89b] drop-shadow-[0_0_2px_rgba(255,216,155,0.3)]">
                   {t(member.countryKey)}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Confirmed Speakers */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-100px' }}
+        transition={{ duration: 0.6, delay: 0.05 }}
+        className="rounded-2xl sm:rounded-3xl border border-[#2d8a5a]/40 bg-[#0d4a2f]/70 p-4 sm:p-6 backdrop-blur-lg shadow-lg md:p-8"
+      >
+        <div className="mb-6">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#ffd89b] drop-shadow-[0_0_4px_rgba(255,216,155,0.3)]">
+            {t('committee.confirmedLabel')}
+          </p>
+          <h3 className="mt-2 text-lg font-semibold tracking-tight text-white sm:text-xl md:text-2xl">
+            {t('committee.confirmedTitle')}
+          </h3>
+        </div>
+
+        <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {confirmedSpeakers.map((speaker, index) => (
+            <motion.div
+              key={speaker.name}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: index * 0.03 }}
+              whileHover={{ scale: 1.02, y: -3 }}
+              className="flex items-start gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0d4a2f]/40 to-[#156b45]/40 border border-[#2d8a5a]/40 p-3 sm:p-4 backdrop-blur-md hover:border-[#ffb347]/50 transition-colors cursor-default min-h-[100px]"
+            >
+              {speaker.photo ? (
+                <MemberPhoto src={speaker.photo} alt={speaker.name} />
+              ) : (
+                <PhotoPlaceholder />
+              )}
+              <div className="min-w-0 flex-1">
+                <p className="text-sm font-semibold text-white">{speaker.name}</p>
+                <p className="mt-0.5 text-[11px] sm:text-xs text-slate-200 line-clamp-3">
+                  {speaker.affiliation}
                 </p>
               </div>
             </motion.div>
