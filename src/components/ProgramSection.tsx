@@ -48,8 +48,8 @@ const ProgramSection = () => {
     },
     {
       time: 'slot7',
-      cells: ['', 'coffeeSnacks', 'socioCultural', 'coffeeBreak', ''],
-      tones: ['', 'white', 'purple', 'white', ''],
+      cells: ['registration', 'coffeeSnacks', 'socioCultural', 'coffeeBreak', 'coffeeBreak'],
+      tones: ['white', 'white', 'purple', 'white', 'white'],
     },
     {
       time: 'slot8',
