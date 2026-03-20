@@ -19,6 +19,8 @@ import tarekPhoto from '../assets/pessoas/tarek.png'
 import timLuddPhoto from '../assets/pessoas/timludd.jpeg'
 import chooPhoto from '../assets/pessoas/chook.jpeg'
 import lewinPhoto from '../assets/pessoas/lewin.jpeg'
+import fernandaCardosoPhoto from '../assets/pessoas/fernandacardoso.jpeg'
+import glennKingPhoto from '../assets/pessoas/gleen.jpeg'
 
 const organizingCommittee = [
   {
@@ -54,8 +56,8 @@ const organizingCommittee = [
   {
     name: 'Fernanda Cardoso',
     affiliation: 'University of Queensland',
-    countryKey: 'countries.brazil',
-    photo: null,
+    countryKey: 'countries.australia',
+    photo: fernandaCardosoPhoto,
   },
 ]
 
@@ -106,7 +108,7 @@ const scientificCommittee = [
     name: 'Glenn King',
     affiliation: 'The University of Queensland, Brisbane',
     countryKey: 'countries.australia',
-    photo: null,
+    photo: glennKingPhoto,
   },
   {
     name: 'Juliana Zuliani',
@@ -204,7 +206,7 @@ const confirmedSpeakers = [
   {
     name: 'Glenn King',
     affiliation: 'The University of Queensland, Australia',
-    photo: null,
+    photo: glennKingPhoto,
   },
   {
     name: 'Jeroen Kool',

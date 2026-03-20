@@ -79,6 +79,25 @@ const RegistrationSection = () => {
             <p>{t('registration.p1')}</p>
             <p>{t('registration.p2')}</p>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.425 }}
+            className="mt-4 rounded-xl border border-[#ffd89b]/40 bg-[#1a613d]/35 p-4"
+          >
+            <p className="text-xs sm:text-sm text-slate-100">
+              {t('registration.membershipHelpText')}{' '}
+              <a
+                href="https://toxinology.org/become-a-member/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#ffd89b] underline decoration-[#ffd89b]/60 underline-offset-2 hover:text-white transition-colors"
+              >
+                {t('registration.membershipHelpLink')}
+              </a>
+            </p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

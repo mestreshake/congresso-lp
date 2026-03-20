@@ -135,6 +135,8 @@
     "openingDate": "April 1st",
     "p1": "Registration categories will include professionals, students, IST members, and non-members, with differentiated fees according to category and registration period (early registration, regular registration, and late/on-site registration).",
     "p2": "Information on abstract submission guidelines, including presentation modalities (oral and poster), will also be announced shortly.",
+    "membershipHelpText": "Want to become an IST member and enjoy member benefits?",
+    "membershipHelpLink": "Apply for membership here",
     "feesTitle": "Registration Fees (USD)",
     "fees": {
       "category": "Category",

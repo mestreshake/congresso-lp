@@ -135,6 +135,8 @@
     "openingDate": "01/04",
     "p1": "As modalidades de inscrição contemplarão profissionais, estudantes, membros da IST e demais participantes, com valores diferenciados por categoria e faixas de data (early, regular e late).",
     "p2": "Diretrizes para submissão de resumos e modalidades de apresentação também serão divulgadas em breve.",
+    "membershipHelpText": "Quer se filiar à IST para aproveitar os benefícios de membro?",
+    "membershipHelpLink": "Faça sua filiação aqui",
     "feesTitle": "Tabela de valores (USD)",
     "fees": {
       "category": "Categoria",
